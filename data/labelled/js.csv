@@ -1,0 +1,206 @@
+origin_diff_link,sha,ID,Message,why_category1,why_category2,why_subcategory1,why_subcategory2,what_category1,what_category2,what_subcategory1,what_subcategory2
+https://github.com/cypress-io/cypress/commit/09acac1ce383525ee0523f036dc1da96ea96a30d,09acac1ce383525ee0523f036dc1da96ea96a30d,2221,missing curly brace,Describe Issue,,Describe error scenario,,Trivial What,,,
+https://github.com/nylas/nylas-mail/commit/d52217a0873a2d087612583c04e56e5f8669b483,d52217a0873a2d087612583c04e56e5f8669b483,5250,bump ( version ) : 0 . 4 . 52 and add Changelog,Trivial Why,,Version management,,Summarize Code Object Change,,Object of change,
+https://github.com/transloadit/uppy/commit/837bfa8ce6deea2d648f9cab6de419fa5b5ddb32,837bfa8ce6deea2d648f9cab6de419fa5b5ddb32,6728,re - enable google drive example and structure options better,Describe Objective,,To make improvements,,,"Summarize Code Object Change
+",,Characteristics of changes
+https://github.com/TryGhost/Ghost/commit/f3d58f5ecbda35db834bf7922b7b6b6dd0edcbd7,f3d58f5ecbda35db834bf7922b7b6b6dd0edcbd7,16124,fixed loading icon bug,Describe Objective,,To fix defects,,Trivial What,,,
+https://github.com/lodash/lodash/commit/87ac6812a38c34864359824684fa0e75df50f563,87ac6812a38c34864359824684fa0e75df50f563,23763,Update repo structure .,"Trivial
+ Why",,Code refactoring,,,Trivial What,,
+https://github.com/nylas/nylas-mail/commit/51b32f974b07b694443877ed66d6faddaa19232b,51b32f974b07b694443877ed66d6faddaa19232b,25359,[ client - sync ] Enable logging in prod builds,Imply Necessity,"Illustrate Requirement
+",Relation to an implemented feature,Usage need,Illustrate Function,,,
+https://github.com/gorhill/uBlock/commit/0c5a9bfba6b799d0973398c5b10666829b575e28,0c5a9bfba6b799d0973398c5b10666829b575e28,25452,this fixes,Missing Why,,,,Missing What,,,
+https://github.com/socketio/socket.io/commit/675830e726d42e622058bd69a34669ef31fc183c,675830e726d42e622058bd69a34669ef31fc183c,26317,updated socket . io - client dependency,,Illustrate Requirement,,"Runtime or development
+ environment change",Summarize Code Object Change,,Object of change,
+https://github.com/TryGhost/Ghost/commit/d7fadfeff7a0014b231f3f2b06d2037da5a20035,d7fadfeff7a0014b231f3f2b06d2037da5a20035,35150,Fixed bug with deleting members after config change,,Describe Objective,,To fix defects,Summarize Code Object Change,,Object of change,
+https://github.com/emberjs/ember.js/commit/24b56fae2b90cc32f9fffde3a2c69d067bb6a2ed,24b56fae2b90cc32f9fffde3a2c69d067bb6a2ed,40162,Merge pull request from bekzod / fix - condition,"Trivial
+ Why",,Version management,,Trivial What,,,
+https://github.com/styled-components/styled-components/commit/799ec5dccdb386fd0b047205df3e8b54471be814,799ec5dccdb386fd0b047205df3e8b54471be814,42078,"indexes are zero based and the "" size "" is 1 - based , need to subtract 1",,Describe Issue,,Describe error scenario,,"Summarize Code Object Change
+",,Object of change
+https://github.com/lodash/lodash/commit/277c9bdc7cbd62f438c65891dd2dfda37632a5b7,277c9bdc7cbd62f438c65891dd2dfda37632a5b7,42753,Make ` shouldInvoke ` explicitly return ` true ` if it ' s the first call .,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/facebook/react-native/commit/e4865a5609814495297cf33753ba7c77c0231a11,e4865a5609814495297cf33753ba7c77c0231a11,46111,Clean up after removing the Stetho dependency from open source React Native,Illustrate Requirement; Trivial Why,,"Runtime or development
+ environment change; Code refactoring",,,Trivial What,,
+https://github.com/mozilla/pdf.js/commit/cd79ac84af9558d726dbe1714856d37d06aa4be9,cd79ac84af9558d726dbe1714856d37d06aa4be9,49377,Merge pull request from pramodhkp / saverestore,"Trivial
+ Why",,Version management,,,Trivial What,,
+https://github.com/typescript-cheatsheets/react/commit/f443a18d2281dcc63c190302eb0712b04d09ca52,f443a18d2281dcc63c190302eb0712b04d09ca52,56863,add plug for tsdx,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/adobe/brackets/commit/8c7f548d013cbde3f9ed1fb908a2a3f4639601d6,8c7f548d013cbde3f9ed1fb908a2a3f4639601d6,59870,Merge pull request from petetnt / patch - 1,"Trivial
+ Why",,Version management,,,Trivial What,,
+https://github.com/markedjs/marked/commit/79cbf5fd0095afa1eeb73221940070a11d1c8c1b,79cbf5fd0095afa1eeb73221940070a11d1c8c1b,61566,fix angle links,Describe Objective,,To fix defects,,Trivial What,,,
+https://github.com/Unitech/pm2/commit/d50c90fc9d69faca465f0ebec229aeceacb8e00b,d50c90fc9d69faca465f0ebec229aeceacb8e00b,61853,Documentation + fix module init,Missing Why,,,,Summarize Code Object Change,,Change list,
+https://github.com/meteor/meteor/commit/fc1b3e596e670afef83093ddd1e13326764ff7b7,fc1b3e596e670afef83093ddd1e13326764ff7b7,62468,Don ' t require test package server to have ' standard - app - packages ',,Missing Why,,,,Illustrate Function,,
+https://github.com/serverless/serverless/commit/fbb5b8f4e51087b65a4ab73c3fe6ae4e51877556,fbb5b8f4e51087b65a4ab73c3fe6ae4e51877556,63753,show package size in human readable way,Describe Objective,,To make improvements,,,"Summarize Code Object Change
+",,Characteristics of changes
+https://github.com/emberjs/ember.js/commit/468fe7bd286048b59b900347a4f741ba4da0cb39,468fe7bd286048b59b900347a4f741ba4da0cb39,71701,Remove code duplication in view helper,"Trivial
+ Why",,Code refactoring,,Trivial What,,,
+https://github.com/RocketChat/Rocket.Chat/commit/55504c46fe8d3cc93fdbf49d18e68df916d60e26,55504c46fe8d3cc93fdbf49d18e68df916d60e26,74043,Merge pull request from RocketChat / fix - test - without - oplog,"Trivial
+ Why",,Version management,Version management,,Trivial What,,
+https://github.com/meteor/meteor/commit/cce79392710fe264d10066fa6139e3de744dc768,cce79392710fe264d10066fa6139e3de744dc768,75389,Run jsdoc script,Missing Why,,,,Missing What,,,
+https://github.com/Automattic/mongoose/commit/a5f58c9fa227856ff8e1a0ab3df702d7e3ea1602,a5f58c9fa227856ff8e1a0ab3df702d7e3ea1602,80156,Fix : bubble up parseError event,Describe Objective,,To fix defects,,Summarize Code Object Change,,Object of change,
+https://github.com/nylas/nylas-mail/commit/f526f79ddef8f15c28cc1b345357a8e6a61f1bb4,f526f79ddef8f15c28cc1b345357a8e6a61f1bb4,81753,fix ( s3 ) : Content - Disposition = > ContentDisposition,Missing Why,,,,Summarize Code Object Change,,Contrast before and after,
+https://github.com/nylas/nylas-mail/commit/fcf8fa766c195a5278e20ab6eca8a03d6b282cf7,fcf8fa766c195a5278e20ab6eca8a03d6b282cf7,82082,fix ( snooze - button ) : Change div to button,Missing Why,,,To fix defects,Summarize Code Object Change,,Contrast before and after,
+https://github.com/serverless/serverless/commit/f0a8b8cfa3645f44cadb6c0361df5dc62f731999,f0a8b8cfa3645f44cadb6c0361df5dc62f731999,83985,Mock npm install in tests,Missing Why,,,,Illustrate Function,,,
+https://github.com/RocketChat/Rocket.Chat/commit/c3646d9081d51d4431231dc7109d62376848ebfb,c3646d9081d51d4431231dc7109d62376848ebfb,86420,no message,Missing Why,,,,Missing What,,,
+https://github.com/RocketChat/Rocket.Chat/commit/68ceb1305fe8baca7b4203e7fcda8648909fe52f,68ceb1305fe8baca7b4203e7fcda8648909fe52f,89399,Merge pull request from RocketChat / popover - on - safari - ios,"Trivial
+ Why",,Version management,,,Trivial What,,
+https://github.com/meteor/meteor/commit/490511a498101a654d1101af6c65d2e7df3f5a0d,490511a498101a654d1101af6c65d2e7df3f5a0d,95949,Move catalog refresh off of catalog . complete,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/vuejs/vue-cli/commit/5ae22a1ad4447eea4dd07e8c07f7281728134726,5ae22a1ad4447eea4dd07e8c07f7281728134726,97198,refactor : allow Generator to accept inline files,Imply Necessity,,Relation to implemented feature,,Illustrate Function,,,
+https://github.com/emberjs/ember.js/commit/3e5d79be58a34bbcc0d441f59c1f77dadf8efb9f,3e5d79be58a34bbcc0d441f59c1f77dadf8efb9f,108523,remove unused babel plugins,"Trivial
+ Why",,Code refactoring,,Summarize Code Object Change,,Object of change,
+https://github.com/RocketChat/Rocket.Chat/commit/7b7761249f9dc622e4990f5efa4de1ae6d6c0dcf,7b7761249f9dc622e4990f5efa4de1ae6d6c0dcf,108909,Oops fixed dumb error,Describe Objective,,To fix defects,,Missing What,,,
+https://github.com/twbs/bootstrap/commit/d3fe506f046d54945e46abcf7668cf7105b0a684,d3fe506f046d54945e46abcf7668cf7105b0a684,109098,clearer js instructions on how to include plugins,Describe Objective,,To make improvements,,,"Summarize Code Object Change
+",,Characteristics of changes
+https://github.com/RocketChat/Rocket.Chat/commit/2d2fdf0cd1da982a5fffd3c864218706fe108dc0,2d2fdf0cd1da982a5fffd3c864218706fe108dc0,109147,Applying velocity - cli for application test in CI mode,Describe Objective,,Usage need,,Illustrate Function,,,
+https://github.com/codemirror/CodeMirror/commit/dcab2496a3994b17a4b38208a34202c758de4e1a,dcab2496a3994b17a4b38208a34202c758de4e1a,114936,[ sql mode ] Tokenize unclosed backtick - escapes more intelligently,Imply Necessity,,Improvements and benefits,,,"Summarize Code Object Change
+",,Characteristics of changes
+https://github.com/atom/atom/commit/bb9150340d9661284d6b4e891df4c5376062b766,bb9150340d9661284d6b4e891df4c5376062b766,116277,: arrow_up : markdown - preview @ 0 . 131 . 0,,"Illustrate Requirement
+",,"Runtime or development
+ environment change",Summarize Code Object Change,,Object of change,
+https://github.com/iptv-org/iptv/commit/f969a95907f8d3596673f9b8000249a6f729317c,f969a95907f8d3596673f9b8000249a6f729317c,122166,Fix Nat Geo Wild HD & Nat Geo Wild pointing to the wrong resolution,Describe Objective,,To fix defects,,,"Summarize Code Object Change
+",,Object of change
+https://github.com/goabstract/Awesome-Design-Tools/commit/1835e4724ded2ef10b20b1fcfc5273d52ec9d51f,1835e4724ded2ef10b20b1fcfc5273d52ec9d51f,124360,=+ Stock Photos Tools,Missing Why,,,,,"Summarize Code Object Change
+
+",,Object of change
+https://github.com/transloadit/uppy/commit/945b7b92fbb4cb1a28c8b2f39aafe18ea17ac9d4,945b7b92fbb4cb1a28c8b2f39aafe18ea17ac9d4,125131,revert dashboard : file - removed - ui,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/gatsbyjs/gatsby/commit/d5e66f93ebd4ab9dc9aaee88fd8250e6be8b2ca8,d5e66f93ebd4ab9dc9aaee88fd8250e6be8b2ca8,129864,feat ( www ) : Add source links to API docs ( ),Missing Why,,,,,"Summarize Code Object Change
+
+",,Object of change
+https://github.com/parcel-bundler/parcel/commit/a01828a59fe4d87355c468b2b3385d708292d63d,a01828a59fe4d87355c468b2b3385d708292d63d,131807,Use dependencies instead of bundle ids for markers and have packagers do replacement,Imply Necessity,,Improvements and benefits,,Summarize Code Object Change,,Characteristics of changes,
+https://github.com/RocketChat/Rocket.Chat/commit/e9d6611aa0bba137b7192cc4119c1412dbfa1bf4,e9d6611aa0bba137b7192cc4119c1412dbfa1bf4,132572,[ FIX ] Mentions message missing ' jump to message ' action ( ),Describe Objective,,To fix defects,,Summarize Code Object Change,,Object of change,
+https://github.com/prettier/prettier/commit/6d42fd12e4ad6d60f432f6711c24bc35692891ea,6d42fd12e4ad6d60f432f6711c24bc35692891ea,133009,Bump Prettier dependency to 1 . 13 . 5,,"Illustrate Requirement
+",,"Runtime or development
+ environment change",Summarize Code Object Change,,Object of change,
+https://github.com/Modernizr/Modernizr/commit/65ce4597d52b0b60452277475ebd8af74c4752aa,65ce4597d52b0b60452277475ebd8af74c4752aa,133402,Added feature detect for four background - position values,Imply Necessity,,Relation to implemented feature,,,Illustrate Function,,
+https://github.com/mermaid-js/mermaid/commit/786d9ddb54f985f6e4f45112d7137e2e7181a7bd,786d9ddb54f985f6e4f45112d7137e2e7181a7bd,134348,Move of drawLoop to svgDraw,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/emberjs/ember.js/commit/76048c976421f798cbcbd11e5699f130282ec5d6,76048c976421f798cbcbd11e5699f130282ec5d6,135449,test mutations to change event handlers during a change event,"Trivial
+ Why",,Test cases,,Illustrate Function,,,
+https://github.com/mui-org/material-ui/commit/2ffc8d6048e28f12d4c6a4904deb47053cda9a05,2ffc8d6048e28f12d4c6a4904deb47053cda9a05,135538,Bump webpack from 4 . 42 . 1 to 4 . 43 . 0 ( ),,"Illustrate Requirement
+",,"Runtime or development
+ environment change",Summarize Code Object Change,,Contrast before and after,
+https://github.com/lodash/lodash/commit/7d7a34c733aa4c662212d6bb7824263cf532b9b7,7d7a34c733aa4c662212d6bb7824263cf532b9b7,138253,Increase code coverage when testing AMD modules .,,Describe Objective,,To make improvements,Illustrate Function,,,
+https://github.com/mozilla/pdf.js/commit/7004313307a5b542e48d42307f02d92df2e9cc54,7004313307a5b542e48d42307f02d92df2e9cc54,138642,Merge pull request from sbarman / streamrewrite2,"Trivial
+ Why",,Version management,,,Trivial What,,
+https://github.com/photonstorm/phaser/commit/2137e3413d5ae8498098bc71aa64fcbf05612658,2137e3413d5ae8498098bc71aa64fcbf05612658,139142,Added cameraZ parameter,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/Modernizr/Modernizr/commit/6a4bbbea8d6472b63bc49511a82b880e3bd0dd67,6a4bbbea8d6472b63bc49511a82b880e3bd0dd67,142930,added some white - spaces and line - breaks,"Trivial
+ Why",,Code refactoring,,Summarize Code Object Change,,Object of change,
+https://github.com/atom/atom/commit/28a2f2773cb6e6f131d1062fd4cfd3b85cbad37f,28a2f2773cb6e6f131d1062fd4cfd3b85cbad37f,143032,permit any whole number for tabLength,Imply Necessity,,Relation to an implemented feature,,,Illustrate Function,,
+https://github.com/alvarotrigo/fullPage.js/commit/5aa7fa653491238d8cb38bf3da2787d100a117d6,5aa7fa653491238d8cb38bf3da2787d100a117d6,145047,Merge pull request from suryasingh / master,"Trivial
+ Why",,Version management,,Trivial What,,,
+https://github.com/TryGhost/Ghost/commit/ba0b6982a4feddff0becb1c7cbb4c3a8851b0c0f,ba0b6982a4feddff0becb1c7cbb4c3a8851b0c0f,163749,Trailing slashes for cache invalidation headers,Imply Necessity,,Relation to an implemented feature,,Summarize Code Object Change,,Object of change,
+https://github.com/gatsbyjs/gatsby/commit/7c01ebf36c627c14fd08f6055ffa1b8f71fd9d3c,7c01ebf36c627c14fd08f6055ffa1b8f71fd9d3c,168049,Add README for google analytics plugin,"Trivial
+ Why",,Text file changes,,Trivial What,,,
+https://github.com/facebook/react/commit/c53fb8f405d3bb5ff83b6845a0e50bd018548a22,c53fb8f405d3bb5ff83b6845a0e50bd018548a22,168309,Update ref - 01 - top - level - api . md,,Trivial Why,,Text file changes,Summarize Code Object Change,,Object of change,
+https://github.com/atom/atom/commit/3b7112889a4acdcdc3550b2f4109fea07f0bac6d,3b7112889a4acdcdc3550b2f4109fea07f0bac6d,169087,Correctly assign gutter container vnode,,Describe Objective,,To fix defects,Illustrate Function,,,
+https://github.com/gatsbyjs/gatsby/commit/828eaf86709cdcf2b52918eac416abc45a11bc3a,828eaf86709cdcf2b52918eac416abc45a11bc3a,170506,fix ( gatsby ) : allow environment variables to be replaced per environment ( ),Imply Necessity,,Relation to an implemented feature,,,Illustrate Function,,
+https://github.com/facebook/react-native/commit/62e238fd6aee10fab94718a8f18fcf6fc1c4f105,62e238fd6aee10fab94718a8f18fcf6fc1c4f105,175469,Place Kakapo in the correct alphabetical order,,describe Objective,,To fix defects,Summarize Code Object Change,,Object of change,
+https://github.com/mozilla/pdf.js/commit/3d523000b9384c2684886c7bcff58ffef8dfb574,3d523000b9384c2684886c7bcff58ffef8dfb574,189420,Fix thumbnail rotation regression,Describe Objective,,To fix defects,,Summarize Code Object Change,,Object of change,
+https://github.com/angular/angular.js/commit/2e9fed7b6c5f8c738406c4e9e65300e5d69a113a,2e9fed7b6c5f8c738406c4e9e65300e5d69a113a,190732,fix ( e2e ) : add index - nocache . html to run e2e tests without cache,Imply Necessity,,Relation to an implemented feature,,Summarize Code Object Change,,Object of change,
+https://github.com/Automattic/mongoose/commit/7bb0130050eeeab2b71db60a9c7dc9116b48c898,7bb0130050eeeab2b71db60a9c7dc9116b48c898,191270,fix ( query ) : handle passRawResult when zero results,Describe Objective,,To fix defects,,,Illustrate Function,,
+https://github.com/angular/angular.js/commit/f274c0a66b28711d3b9cc7b0775e97755dd971e8,f274c0a66b28711d3b9cc7b0775e97755dd971e8,202445,fix ( mock . $ log ) : keep in sync with $ log,,describe Objective,,To fix defects,Illustrate Function,,,
+https://github.com/gatsbyjs/gatsby/commit/02ddd46129f2a6d41b533a2f2b9a36b67b2f3d9e,02ddd46129f2a6d41b533a2f2b9a36b67b2f3d9e,226171,fix ( reporter ) : TypeScript definitions for Reporter ( ),Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/adobe/brackets/commit/4b72f4d67cd896740cfc9150d2cc9fefa9b1242f,4b72f4d67cd896740cfc9150d2cc9fefa9b1242f,230595,adding timeout to directory reading,Missing Why,,,,,Illustrate Function,,
+https://github.com/photonstorm/phaser/commit/aa4ebab29dfb5767e8050f8e723caa3fc4c94aaf,aa4ebab29dfb5767e8050f8e723caa3fc4c94aaf,236527,Update PIXI . d . ts generateTexture,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/balderdashy/sails/commit/5f6be059823aeb235ef3b4cf53a8d40a341c5873,5f6be059823aeb235ef3b4cf53a8d40a341c5873,239904,Update Grunt dependencies,,"Illustrate Requirement
+",,"Runtime or development
+ environment change",Summarize Code Object Change,,Object of change,
+https://github.com/TryGhost/Ghost/commit/97bf329ee2232193595dac461b0770fd7e1cd14a,97bf329ee2232193595dac461b0770fd7e1cd14a,241211,Passed appInfo to members - api stripe instance,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/facebook/react/commit/5dabba999b0364db8cb696dd036e388de4eded03,5dabba999b0364db8cb696dd036e388de4eded03,244939,add missing ' use strict ' to getTestDocument,Describe Objective,,To fix defects,,Summarize Code Object Change,,Object of change,
+https://github.com/mermaid-js/mermaid/commit/233520b797395fe43fc912be30488f80e8bc6278,233520b797395fe43fc912be30488f80e8bc6278,252383,"improve handling of different "" br "" tag notations for multiline texts in sequence diagrams",Describe Objective,,To make improvements,,Illustrate Function,,,
+https://github.com/lerna/lerna/commit/95d179d46c6443c8be5e2ef2350b8a8fdc5905d8,95d179d46c6443c8be5e2ef2350b8a8fdc5905d8,254159,feat ( git - utils ) : Devolve getShortSHA ( ) to consumers,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/nwjs/nw.js/commit/b483ce49ce0950df6a93544de302d010bd164b88,b483ce49ce0950df6a93544de302d010bd164b88,255848,[ test ] add case for : crash on start with improper child_process spawn path,"Trivial
+ Why",,Test cases,,Illustrate Function,,,
+https://github.com/GoogleChrome/lighthouse/commit/401d0a7d6a1ef9818580ec684ec3bcccf4ed3280,401d0a7d6a1ef9818580ec684ec3bcccf4ed3280,264676,"feat: table styles (#2210)
+* feat: table styles
+
+* feedback and tests
+
+* styleAs -> styleClass
+
+* Revert ""styleAs -> styleClass""
+
+This reverts commit 43eee33.
+
+* Revert ""feedback and tests""
+
+This reverts commit a128616.
+
+* Revert ""feat: table styles""
+
+This reverts commit c04f675.
+
+* add styling based on item type
+
+* plumb through itemType
+
+* closure
+",Missing Why,,,,,"summarize Code Object Change
+
+",,Change list
+https://github.com/serverless/serverless/commit/d490ed413efdb09572a460c3883db821ef7dc4cd,d490ed413efdb09572a460c3883db821ef7dc4cd,270303,Rename to deploymentBucket as recommended by @ flomotlik,,Imply Necessity,,Conventions and standards,Summarize Code Object Change,,Object of change,
+https://github.com/RocketChat/Rocket.Chat/commit/c5c204284a4428f27308436daf40eeab549b479a,c5c204284a4428f27308436daf40eeab549b479a,270505,updating mongo,Missing Why,,,,Missing What,,,
+https://github.com/goabstract/Awesome-Design-Tools/commit/83580c62bc519f6b5c609a688b34ef3bc12f9a43,83580c62bc519f6b5c609a688b34ef3bc12f9a43,277909,Added Design Hunt,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/standard/standard/commit/d68e968d02f8b33519f687927dc81e74d8103e9c,d68e968d02f8b33519f687927dc81e74d8103e9c,280131,Merge pull request from prigara / master,"Trivial
+ Why",,Version management,,,Trivial What,,
+https://github.com/nuxt/nuxt.js/commit/b61698f44c804a2a418283579ca2dedeca5b231c,b61698f44c804a2a418283579ca2dedeca5b231c,281175,feat : handle spa errors with default loading indicator,Describe Objective,,To fix defects,,Illustrate Function,,,
+https://github.com/adobe/brackets/commit/ce51302affec75647826e6e72290c413eaa3e15c,ce51302affec75647826e6e72290c413eaa3e15c,283519,added KeyEvent util to KeyBindingManager . js and CodeHintManager . js,Missing Why,,,,Summarize Code Object Change,,Object of change,
+https://github.com/vuejs/vue-cli/commit/e0913e09eab814aaffa1e10695368ee911e3c24c,e0913e09eab814aaffa1e10695368ee911e3c24c,287384,chore : next - > dev,Missing Why,,,,,"Summarize Code Object Change
+
+",,Contrast before and after
+https://github.com/twbs/bootstrap/commit/33d49f632411434eb5ba070274bda44ec4ddc493,33d49f632411434eb5ba070274bda44ec4ddc493,288935,Merge pull request from dante2008 / contri - doc - typo,"Trivial
+ Why",,Version management,,,Trivial What,,
+https://github.com/nylas/nylas-mail/commit/b9bf6ea318a2c25f7904f63ce60752e0d8f965c6,b9bf6ea318a2c25f7904f63ce60752e0d8f965c6,289281,fix observable disposable,,Describe Objective,,To fix defects,Summarize Code Object Change,,Object of change,
+https://github.com/atom/atom/commit/ef94a940a97defaf2b2745e5c02f1efd4ad5a999,ef94a940a97defaf2b2745e5c02f1efd4ad5a999,296385,Make the TextEditor setters call update ( ),Missing Why,,,,,Illustrate Function,,
+https://github.com/angular/angular.js/commit/9c2d0b8af3f4ea8fe5ca4dffc25560bfdd63cd7f,9c2d0b8af3f4ea8fe5ca4dffc25560bfdd63cd7f,297549,"test($compile): work around Chrome issue with reported size for `<for…
+…eignObject>`
+
+Since Chrome 53-57+, the reported size of `<foreignObject>` elements and their
+descendants is affected by global display settings (e.g. font size) and browser
+settings (e.g. default zoom level). This could cause tests incorrectly failing
+due to such settings.
+
+In order to avoid false negatives, we now compare against the size of the
+equivalent, hand-written SVG instead of fixed widths/heights.
+
+Fixes #15333
+
+Closes #15458",Describe Issue,,Introduce issue/PR reference,,Describe Implementation Principle,,,
+https://github.com/TryGhost/Ghost/commit/a2747a7cb721f47b24b7856514de4d14ddbbdae6,a2747a7cb721f47b24b7856514de4d14ddbbdae6,297765,Merge pull request from cobbspur / bugfixes,"Trivial
+ Why",,Version management,,Trivial What,,,
+https://github.com/atom/atom/commit/027b433953a6e5234b7236758a3bc75575dc8092,027b433953a6e5234b7236758a3bc75575dc8092,298145,Log it all,Missing Why,,,,Missing What,,,
+https://github.com/codemirror/CodeMirror/commit/10faa9d34f029de73e17f334d465b75d37bfa790,10faa9d34f029de73e17f334d465b75d37bfa790,298182,preserve highlighting when editing a line,Missing Why,,,,Illustrate Function,,,
+https://github.com/gorhill/uBlock/commit/6fd0bb429195604ddea1dc71551ce30d9fa567d0,6fd0bb429195604ddea1dc71551ce30d9fa567d0,298906,more refactoring of content script : better modularization of various components,"Trivial
+ Why",,Code refactoring,,,"Summarize Code Object Change
+",,Characteristics of changes
+https://github.com/emberjs/ember.js/commit/b628b21dc1b0af8928a307b33cd9d2edb3a03a7e,b628b21dc1b0af8928a307b33cd9d2edb3a03a7e,311022,Merge pull request from emberjs / bugfix / upgrade - glimmer - vm - 0 . 47 . 9,"Trivial
+ Why",,Version management,,,Trivial What,,
+https://github.com/emberjs/ember.js/commit/a9a36f4f8931488de40c64f4f190c0c3ce5be035,a9a36f4f8931488de40c64f4f190c0c3ce5be035,315064,Update CHANGELOG for 2 . 16 . 0 - beta . 2 .,"Trivial
+ Why",,Text file changes,,,"Summarize Code Object Change
+",,Object of change
+https://github.com/airbnb/lottie-web/commit/091daa89d81b15229d816424dd255bfd590417f1,091daa89d81b15229d816424dd255bfd590417f1,316485,hcamera expression fix,Describe Objective,,To fix defects,,Summarize Code Object Change,,Object of change,
+https://github.com/RocketChat/Rocket.Chat/commit/c942b0c5ee4eca783e42ad9c401f8f52f18a35a1,c942b0c5ee4eca783e42ad9c401f8f52f18a35a1,316680,Merge pull request from RocketChat / develop - sync,"Trivial
+ Why",,Version management,,Trivial What,,,
+https://github.com/facebook/react/commit/5f7b175b35fa6faccb0da14e897dcda9c13d6031,5f7b175b35fa6faccb0da14e897dcda9c13d6031,329505,"Pressable click fix (#18625)
+* Update press-legacy to use native click events
+
+* update tests for pressable change
+
+* fix formatting issue
+
+* Address comments. Bring back some tests, remove others. Cleanup
+
+* Fix flow and lint errors
+
+* formatting fix missed by yarn lint",,Describe Objective,,To fix defects; To make improvements,,"summarize Code Object Change
+
+",,Change list
+https://github.com/cypress-io/cypress/commit/8eabead8a24c3a2b17e932471e16d694728ffe06,8eabead8a24c3a2b17e932471e16d694728ffe06,330388,refactored project . added specs,"Trivial
+ Why",,Code refactoring; Annotation changes,,,"Summarize Code Object Change
+",,Object of change
+https://github.com/mui-org/material-ui/commit/e33afed6913b58a990bd4b51a038bbfff0a0f42f,e33afed6913b58a990bd4b51a038bbfff0a0f42f,332222,v0 . 13 . 3 release,"Trivial
+ Why",,Version management,,,"Summarize Code Object Change
+",,Object of change
+https://github.com/Automattic/mongoose/commit/f46fbfcd701facd5927948a153173336fbd89a15,f46fbfcd701facd5927948a153173336fbd89a15,333148,Merge pull request from makinde / lean_default_getter,"Trivial
+ Why",,Version management,,,Trivial What,,
+https://github.com/emberjs/ember.js/commit/83fc16b477bdfca9e784cc3a4a2cc57fa79a095d,83fc16b477bdfca9e784cc3a4a2cc57fa79a095d,334310,Merge pull request from aldhsu / patch - 1,"Trivial
+ Why",,Version management,,,Trivial What,,
+https://github.com/adobe/brackets/commit/5cf36c5a48c28a5380a00cb33535e71b447a71b8,5cf36c5a48c28a5380a00cb33535e71b447a71b8,348383,Code cleanup .,"Trivial
+ Why",,Code refactoring,,,Missing What,,
+https://github.com/lodash/lodash/commit/0471dfa2f8752e1c6225d68a69ec311117e6cf3f,0471dfa2f8752e1c6225d68a69ec311117e6cf3f,357299,Update vendor / qunit - clib to avoid ` logInline ` when running on Windows .,,Describe Objective,,to make improvements,Illustrate Function,,,
