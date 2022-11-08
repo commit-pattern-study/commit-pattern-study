@@ -15,7 +15,6 @@ WHAT_CATEGORY = "what_category"
 WHY_SUBCATEGORY = "why_subcategory"
 WHAT_SUBCATEGORY = "what_subcategory"
 CATEGORY_COLUMN = [WHY_CATEGORY, WHY_SUBCATEGORY, WHAT_CATEGORY, WHAT_SUBCATEGORY]
-COLUMN = [LANGUAGE_COL_NAME, ID_COL_NAME, SHA_COL_NAME, WHY_CATEGORY, WHY_SUBCATEGORY, WHAT_CATEGORY, WHAT_SUBCATEGORY]
 
 # directory for all labelled csv
 DATA_PATH = "../../data"
@@ -32,20 +31,17 @@ def join_column(x) -> str:
                                                                                                          "_").lower()
 
 
-def get_finalize_dataFrame(file: DataFrame, language: str, category_start_index=4) -> DataFrame:
+def get_finalize_dataFrame(df: DataFrame, language: str, category_start_index=4) -> DataFrame:
     """
     Prune empty/nan cell and merge two labelled categories into one, for example, why_subcategory1, why_subcategory2
     become why_subcategory where the value = why_subcategory1 == null ? why_subcategory2 : why_subcategory1
     """
-    file[LANGUAGE_COL_NAME] = language
-    file[ID_COL_NAME] = file["ID"]
-    file[SHA_COL_NAME] = file["sha"]
+    finalized_df = df[['ID', 'link', 'repo', 'message']].copy()
     for category_col in CATEGORY_COLUMN:
-        file[category_col] = file[file.columns[category_start_index:category_start_index + 2]].apply(join_column,
-                                                                                                     axis=1)
+        finalized_df[category_col] = df[df.columns[category_start_index:category_start_index + 2]].apply(join_column,
+                                                                                       axis=1)
         category_start_index += 2
-    file = file[file.columns.intersection(COLUMN)]
-    return file
+    return finalized_df
 
 
 def appendDFToDict(col2df: dict, file: DataFrame, category: str) -> None:
@@ -80,22 +76,27 @@ if __name__ == "__main__":
     file_list: list = [LABELLED_PATH + f for f in listdir(LABELLED_PATH) if isfile(join(LABELLED_PATH, f))]
     language_list: list = [os.path.split(i)[1].split(".")[0] for i in file_list]
 
-    raw_files: list = [get_dataFrame_from_csv(file) for file in file_list]
-    finalized_files: list = [get_finalize_dataFrame(file, language) for file, language in zip(raw_files, language_list)]
+    raw_dfs: list = [pd.read_csv(file) for file in file_list]
 
-    for file, language in zip(finalized_files, language_list):
-        save_to_csv(file, os.path.join(FINALIZED_PATH, "finalized_{}.csv".format(language)))
+    for df in raw_dfs:
+        print(df.why_category1.unique())
+        print(df.why_category2.unique())
+
+    finalized_dfs: list = [get_finalize_dataFrame(file, language) for file, language in zip(raw_dfs, language_list)]
+
+    for df, language in zip(finalized_dfs, language_list):
+        save_to_csv(df, os.path.join(FINALIZED_PATH, "finalized_{}.csv".format(language)))
 
     # each key-value pair represent category value to the dataframe that contains the rows with that category
     category_to_row: dict = {}
 
-    for file in finalized_files:
-        file_for_col = find_sub_dataFrame(file)
-        for col, df in file_for_col.items():
+    for df in finalized_dfs:
+        file_for_col = find_sub_dataFrame(df)
+        for col, sub_df in file_for_col.items():
             if col not in category_to_row:
-                category_to_row[col] = df
+                category_to_row[col] = sub_df
             else:
-                category_to_row[col] = concate_to_res(category_to_row[col], df)
+                category_to_row[col] = concate_to_res(category_to_row[col], sub_df)
 
     for col, sheet in category_to_row.items():
         save_to_csv(sheet, os.path.join(CATEGORY_PATH, "{}_commit.csv".format(col)))
