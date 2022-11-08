@@ -23,6 +23,7 @@ setup(
     description="A data_process Python project",  # Optional
     long_description=long_description,  # Optional
     long_description_content_type="text/markdown",  # Optional (see note above)
+    package_dir={"": "src"},  # Optional
     packages=find_packages(where="src"),  # Required
     python_requires=">=3.7, <4",
     install_requires=["peppercorn"],  # Optional
