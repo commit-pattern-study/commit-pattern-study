@@ -8,3 +8,9 @@ def get_dataFrame_from_csv(file: str) -> DataFrame:
 
 def save_to_csv(file: DataFrame, save_file: str) -> None:
     file.to_csv(save_file, index=False)
+
+
+def getKeywordFromFile(file_path: str) -> str:
+    f = open(file_path)
+    keywords = f.read().splitlines()
+    return "|".join(keywords)
