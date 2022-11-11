@@ -9,7 +9,8 @@ from util.FileUtil import getKeywordFromFile
 from project_path import ROOT_DIR
 
 TO_FIX_DEFECTS_KEYWORD_FILE = "{}/data/pattern/to_fix_defects_keyword.txt".format(ROOT_DIR)
-
+LINK_ISSUE_VERB_KEYWORD_FILE = "{}/data/pattern/link_issue_verb_keyword.txt".format(ROOT_DIR)
+OUT_OF_DATE_KEYWORD_FILE = "{}/data/pattern/out_of_date_keyword.txt".format(ROOT_DIR)
 
 class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
     """
@@ -17,8 +18,11 @@ class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
     regex_exp is the regular expression of the pattern for the category
     """
     DESCRIBE_ERROR_SCENARIO = "describe_error_scenario", ".*error.*"
-    TO_FIX_DEFECTS = "to_fix_defects", "({})".format(getKeywordFromFile(TO_FIX_DEFECTS_KEYWORD_FILE))
+    TO_FIX_DEFECTS = "to_fix_defects", "({})+".format(getKeywordFromFile(TO_FIX_DEFECTS_KEYWORD_FILE))
     ISSUE_LINK = "issue_link", "https"
+    INTRODUCE_ISSUE_PR_REFERENCE = "introduce_issue_PR_reference", \
+                                   "(?P<link_issue_verb>{})?.*?(issue|review)?.*?(?P<issue_link>\#\d+)+".format(getKeywordFromFile(LINK_ISSUE_VERB_KEYWORD_FILE))
+    OUT_OF_DATE = "out_of_date", "({})+".format(getKeywordFromFile(OUT_OF_DATE_KEYWORD_FILE))
 
     def __str__(self) -> str:
         return self.name
