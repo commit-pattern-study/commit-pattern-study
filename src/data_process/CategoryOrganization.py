@@ -5,7 +5,7 @@ from os.path import isfile, join
 import pandas as pd
 from pandas import DataFrame
 
-from util.FileUtil import get_dataFrame_from_csv, save_to_csv
+from util.FileUtil import save_to_csv
 
 LANGUAGE_COL_NAME = "language"
 ID_COL_NAME = "id"
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     finalized_dfs: list = [get_finalize_dataFrame(file, language) for file, language in zip(raw_dfs, language_list)]
 
     for df, language in zip(finalized_dfs, language_list):
-        save_to_csv(df, os.path.join(FINALIZED_PATH, "finalized_{}.csv".format(language)))
+        df.to_csv(os.path.join(FINALIZED_PATH, "finalized_{}.csv".format(language)), index=False)
 
     # each key-value pair represent category value to the dataframe that contains the rows with that category
     category_to_row: dict = {}
@@ -98,5 +98,5 @@ if __name__ == "__main__":
             else:
                 category_to_row[col] = concate_to_res(category_to_row[col], sub_df)
 
-    for col, sheet in category_to_row.items():
-        save_to_csv(sheet, os.path.join(CATEGORY_PATH, "{}_commit.csv".format(col)))
+    for col, sheet_df in category_to_row.items():
+        sheet_df.to_csv(os.path.join(CATEGORY_PATH, "{}_commit.csv".format(col)), index=False)
