@@ -1,13 +1,12 @@
 from collections import namedtuple
 
-from data_process.CommitUtil import preprocess
+from util.CommitUtil import *
 from enum import Enum
 
 import re
 
 from util.FileUtil import getKeywordFromFile
 from project_path import ROOT_DIR
-
 
 TO_FIX_DEFECTS_KEYWORD_FILE = "{}/data/pattern/to_fix_defects_keyword.txt".format(ROOT_DIR)
 
@@ -25,48 +24,56 @@ class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
         return self.name
 
 
-def pattern_match(pattern: CommitCategory, commit_msg: str, verbose: bool = False) -> bool:
-    """
-    return true if commit_msg matched pattern
-    """
+class CommitClassifier():
+    def __init__(self, commit_msg: str):
+        """
+            return list of categories for commit_msg
+            """
 
-    if re.search(pattern.regex_exp, commit_msg):
-        if verbose:
-            info(pattern.name, commit_msg, re.findall(pattern.regex_exp, commit_msg))
-        return True
+        self.res: list = []
+        self.commit_msg = commit_msg
 
-    return False
+    def preprocess(self):
+        """
+        preprocess commit_msg
+        """
+        tokenized_lst = stem_tokenize(self.commit_msg)
+        self.commit_msg = ' '.join(tokenized_lst)
+        self.commit_msg = remove_stop_words(self.commit_msg)
+        self.commit_msg = denoise(self.commit_msg)
 
+    def pattern_match(self, pattern: CommitCategory, verbose: bool = False) -> bool:
+        """
+        return true if commit_msg matched pattern
+        """
+        if re.search(pattern.regex_exp, self.commit_msg):
+            if verbose:
+                self.info(pattern.name, re.findall(pattern.regex_exp, self.commit_msg))
+            return True
 
-def info(pattern_name: str, commit_msg: str, all_found_patterns: list):
-    print("Commit Message: {}, Pattern: {}\nFound patterns: {}\n".format(commit_msg, pattern_name,
-                                                                         ", ".join(all_found_patterns)))
+        return False
 
+    def classify(self) -> list:
+        self.preprocess()
+        for pattern in CommitCategory:
+            if self.pattern_match(pattern, True):
+                self.res.append(pattern)
+        return self.res
 
-def commit_classifier(commit_msg: str) -> list:
-    """
-    return list of categories for commit_msg
-    """
-
-    res: list = []
-
-    for pattern in CommitCategory:
-        if pattern_match(pattern, commit_msg, True):
-            res.append(pattern)
-
-    return res
+    def info(self, pattern_name: str, all_found_patterns: list):
+        print("Commit Message: {},Category: {}\nMatched patterns: {}\n".format(self.commit_msg, pattern_name,
+                                                                             ", ".join(all_found_patterns)))
 
 
 if __name__ == "__main__":
     """
     pipeline for classifying a single commit message
     """
-    commit_msg_test: str = "fix error feat:"
-
-    # preprocess commit msg
-    commit_msg_test = preprocess(commit_msg_test)
+    commit_msg_test: str = "fixed error feat:"
+    commit_classifer = CommitClassifier(commit_msg_test)
+    commit_classifer.preprocess()
+    print('raw string: {}, preprocessed string: {}'.format(commit_msg_test, commit_classifer.commit_msg))
 
     # get the list of Patterns that the commit message can be classified to
-    category: list = commit_classifier(commit_msg_test)
-
+    category: list = commit_classifer.classify()
     print("Commit Message: {} belongs to {} categories".format(commit_msg_test, ", ".join([str(e) for e in category])))
