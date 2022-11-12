@@ -65,8 +65,9 @@ class CommitClassifier:
                         matched_substrings.append(re.findall(pattern.regex_exp, commit_msg))
                     commit_categories.append(pattern)
             if self.verbose:
-                print("Commit Message: {}, Categories: {}\n Matched substrings: {}\n".format(commit_msg, commit_categories,
-                                                                                        matched_substrings))
+                print("Commit Message: {}, Categories: {}\n Matched substrings: {}\n".format(commit_msg,
+                                                                                             commit_categories,
+                                                                                             matched_substrings))
             self.commit_category_dict[commit_msg] = commit_categories
 
     def pretty_print(self):
@@ -80,9 +81,7 @@ if __name__ == "__main__":
     pipeline for classifying a single commit message
     """
     commit_msg_test: str = "fixed error feat:"
-    commit_msg_test2: str = "actually deprecate stuff"
-    commit_classifer = CommitClassifier([commit_msg_test, commit_msg_test2], True)
+    commit_msg_test2: str = "fixes #20"
+    commit_classifer = CommitClassifier([commit_msg_test, commit_msg_test2], False)
     commit_classifer.classify()
     commit_classifer.pretty_print()
-
-

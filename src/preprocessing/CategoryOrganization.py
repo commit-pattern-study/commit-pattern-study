@@ -5,8 +5,6 @@ from os.path import isfile, join
 import pandas as pd
 from pandas import DataFrame
 
-from util.FileUtil import save_to_csv
-
 LANGUAGE_COL_NAME = "language"
 ID_COL_NAME = "id"
 SHA_COL_NAME = "sha"

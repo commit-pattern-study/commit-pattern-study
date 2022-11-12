@@ -1,2 +1,6 @@
 setuptools~=60.2.0
 pandas~=1.5.1
+contractions~=0.1.72
+nltk~=3.7
+bs4~=0.0.1
+beautifulsoup4~=4.11.1
