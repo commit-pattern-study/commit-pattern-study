@@ -11,6 +11,7 @@ from project_path import ROOT_DIR
 TO_FIX_DEFECTS_KEYWORD_FILE = "{}/data/pattern/to_fix_defects_keyword.txt".format(ROOT_DIR)
 LINK_ISSUE_VERB_KEYWORD_FILE = "{}/data/pattern/link_issue_verb_keyword.txt".format(ROOT_DIR)
 OUT_OF_DATE_KEYWORD_FILE = "{}/data/pattern/out_of_date_keyword.txt".format(ROOT_DIR)
+CONVENTIONS_AND_STANDARDS_KEYWORDS_FILE = "{}/data/pattern/conventions_and_standards.txt".format(ROOT_DIR)
 
 
 class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
@@ -25,6 +26,8 @@ class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
                                    "(?P<link_issue_verb>{})?.*?(issue|review)?.*?(?P<issue_link>\#\d+)+".format(
                                        getKeywordFromFile(LINK_ISSUE_VERB_KEYWORD_FILE))
     OUT_OF_DATE = "out_of_date", "({})+".format(getKeywordFromFile(OUT_OF_DATE_KEYWORD_FILE))
+    CONVENTIONS_AND_STANDARDS = "conventions_and_standards", \
+                                "({})+".format(getKeywordFromFile(CONVENTIONS_AND_STANDARDS_KEYWORDS_FILE))
 
     def __str__(self) -> str:
         return self.name
@@ -81,7 +84,7 @@ if __name__ == "__main__":
     pipeline for classifying a single commit message
     """
     commit_msg_test: str = "fixed error feat:"
-    commit_msg_test2: str = "fixes #20"
+    commit_msg_test2: str = "Follow the rule and conventions please"
     commit_classifer = CommitClassifier([commit_msg_test, commit_msg_test2], False)
     commit_classifer.classify()
     commit_classifer.pretty_print()
