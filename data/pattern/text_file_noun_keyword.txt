@@ -1,0 +1,15 @@
+README
+CHANGELOG
+.md
+.rst
+docs
+doc
+documentation
+document
+appendix
+instructions
+manual
+translation
+text
+example
+link
