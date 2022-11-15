@@ -15,6 +15,8 @@ TEST_VERB_KEYWORD_FILE = "{}/data/pattern/test_verb_keyword.txt".format(ROOT_DIR
 ANNOTATION_NOUN_KEYWORD_FILE = "{}/data/pattern/annotation_noun_keyword.txt".format(ROOT_DIR)
 EDITING_VERB_KEYWORD_FILE = "{}/data/pattern/editing_verb_keyword.txt".format(ROOT_DIR)
 TEXT_FILE_NOUN_KEYWORD_FILE = "{}/data/pattern/text_file_noun_keyword.txt".format(ROOT_DIR)
+CONVENTIONS_AND_STANDARDS_KEYWORDS_FILE = "{}/data/pattern/conventions_and_standards.txt".format(ROOT_DIR)
+
 
 class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
     """
@@ -41,6 +43,9 @@ class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
     TEXT_FILE_CHANGES = "text_file_changes", "(({})+\W.*?({})+\W)|(({})+\W.*?({})+\W)".format(text_file_noun_keyword_lst, editing_verb_keyword_lst,
                                                            editing_verb_keyword_lst, text_file_noun_keyword_lst)
 
+    OUT_OF_DATE = "out_of_date", "({})+".format(getKeywordFromFile(OUT_OF_DATE_KEYWORD_FILE))
+    CONVENTIONS_AND_STANDARDS = "conventions_and_standards", \
+                                "({})+".format(getKeywordFromFile(CONVENTIONS_AND_STANDARDS_KEYWORDS_FILE))
 
     def __str__(self) -> str:
         return self.name
@@ -96,8 +101,8 @@ if __name__ == "__main__":
     """
     pipeline for classifying a single commit message
     """
-    commit_msg_test: str = "fix typos in comments"
-    commit_msg_test2: str = "fixes #20"
+    commit_msg_test: str = "fixed error feat:"
+    commit_msg_test2: str = "Follow the rule and conventions please"
     commit_classifer = CommitClassifier([commit_msg_test, commit_msg_test2], False)
     commit_classifer.classify()
     commit_classifer.pretty_print()
