@@ -16,6 +16,10 @@ ANNOTATION_NOUN_KEYWORD_FILE = "{}/data/pattern/annotation_noun_keyword.txt".for
 EDITING_VERB_KEYWORD_FILE = "{}/data/pattern/editing_verb_keyword.txt".format(ROOT_DIR)
 TEXT_FILE_NOUN_KEYWORD_FILE = "{}/data/pattern/text_file_noun_keyword.txt".format(ROOT_DIR)
 CONVENTIONS_AND_STANDARDS_KEYWORDS_FILE = "{}/data/pattern/conventions_and_standards.txt".format(ROOT_DIR)
+test_verb_keyword_lst = getKeywordFromFile(TEST_VERB_KEYWORD_FILE)
+annotation_noun_keyword_lst = getKeywordFromFile(ANNOTATION_NOUN_KEYWORD_FILE)
+editing_verb_keyword_lst = getKeywordFromFile(EDITING_VERB_KEYWORD_FILE)
+text_file_noun_keyword_lst = getKeywordFromFile(TEXT_FILE_NOUN_KEYWORD_FILE)
 
 
 class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
@@ -26,26 +30,22 @@ class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
     DESCRIBE_ERROR_SCENARIO = "describe_error_scenario", ".*error.*"
     TO_FIX_DEFECTS = "to_fix_defects", "({})+".format(getKeywordFromFile(TO_FIX_DEFECTS_KEYWORD_FILE))
     ISSUE_LINK = "issue_link", "https"
-    INTRODUCE_ISSUE_PR_REFERENCE = "introduce_issue_PR_reference", \
-                                   "(?P<link_issue_verb>{})?\W.*?(issue|review)?\W.*?(?P<issue_link>\#\d+)+".format(
-                                       getKeywordFromFile(LINK_ISSUE_VERB_KEYWORD_FILE))
+    INTRODUCE_ISSUE_PR_REFERENCE = "introduce_issue_PR_reference", "(?P<link_issue_verb>{})?\W.*?(issue|review)?\W.*?(?P<issue_link>\#\d+)+".format(
+        getKeywordFromFile(LINK_ISSUE_VERB_KEYWORD_FILE))
     OUT_OF_DATE = "out_of_date", "({})+\W".format(getKeywordFromFile(OUT_OF_DATE_KEYWORD_FILE))
     TYPOGRAPHIC_FIXES = "typographic_fixes", "(typo|typographic|typograph)+"
 
-    test_verb_keyword_lst = getKeywordFromFile(TEST_VERB_KEYWORD_FILE)
-    TEST_CASES = "test_cases", "((\S*?test)+\W.*?({})+\W)|(({})+\W.*?(\S*?test)+\W)".format(test_verb_keyword_lst, test_verb_keyword_lst)
+    TEST_CASES = "test_cases", "((\S*?test)+\W.*?({})+\W)|(({})+\W.*?(\S*?test)+\W)".format(
+        test_verb_keyword_lst, test_verb_keyword_lst)
 
-    annotation_noun_keyword_lst = getKeywordFromFile(ANNOTATION_NOUN_KEYWORD_FILE)
-    editing_verb_keyword_lst = getKeywordFromFile(EDITING_VERB_KEYWORD_FILE)
-    text_file_noun_keyword_lst = getKeywordFromFile(TEXT_FILE_NOUN_KEYWORD_FILE)
-    ANNOTATION_CHANGES = "annotation_changes", "(({})+\W.*?({})+\W)|(({})+\W.*?({})+\W)".format(annotation_noun_keyword_lst, editing_verb_keyword_lst,
-                                                           editing_verb_keyword_lst, annotation_noun_keyword_lst)
-    TEXT_FILE_CHANGES = "text_file_changes", "(({})+\W.*?({})+\W)|(({})+\W.*?({})+\W)".format(text_file_noun_keyword_lst, editing_verb_keyword_lst,
-                                                           editing_verb_keyword_lst, text_file_noun_keyword_lst)
+    ANNOTATION_CHANGES = "annotation_changes", "(({})+\W.*?({})+\W)|(({})+\W.*?({})+\W)".format(
+        annotation_noun_keyword_lst, editing_verb_keyword_lst, editing_verb_keyword_lst, annotation_noun_keyword_lst)
 
-    OUT_OF_DATE = "out_of_date", "({})+".format(getKeywordFromFile(OUT_OF_DATE_KEYWORD_FILE))
-    CONVENTIONS_AND_STANDARDS = "conventions_and_standards", \
-                                "({})+".format(getKeywordFromFile(CONVENTIONS_AND_STANDARDS_KEYWORDS_FILE))
+    TEXT_FILE_CHANGES = "text_file_changes", "(({})+\W.*?({})+\W)|(({})+\W.*?({})+\W)".format(
+        text_file_noun_keyword_lst, editing_verb_keyword_lst, editing_verb_keyword_lst, text_file_noun_keyword_lst)
+
+    CONVENTIONS_AND_STANDARDS = "conventions_and_standards", "({})+".format(
+        getKeywordFromFile(CONVENTIONS_AND_STANDARDS_KEYWORDS_FILE))
 
     def __str__(self) -> str:
         return self.name
