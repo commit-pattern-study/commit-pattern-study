@@ -48,8 +48,9 @@ def denoise(text: str) -> str:
     text = soup.get_text()
     # replace contractions in string of text
     text = contractions.fix(text)
-    # remove the regex \n
+    # remove the regex \t \s
     text = re.sub(r'[\n\t\s]', ' ', text)
     # remove punctuation
-    text = re.sub(r'[\'\"!”#$%&’()*+,-./:;<=>?@[\]^_`{|}~\\]', ' ', text)
-    return text
+    #text = re.sub(r'[\'\"!”#$%&’()*+,-./:;<=>?@[\]^_`{|}~\\]', ' ', text)
+    text = re.sub(r'[\'\"!”#$%&’()+,/:;?@[\]^_`{|}~\\]', ' ', text)
+    return ' '.join(text.split())

@@ -1,0 +1,8 @@
+from \w+ to \w+
+\w+\s*-\s*>\s*\w+
+\w+\s*=\s*>\s*\w+
+\w+ vs(\.)* \w+
+instead of \w+
+between \w+
+revert \w+
+replace \w+ with \w+
