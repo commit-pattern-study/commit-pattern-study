@@ -17,6 +17,7 @@ CHANGE_INDICATOR_FILE = "{}/data/pattern/change_indicator.txt".format(ROOT_DIR)
 POSITIVE_OUTCOME_KEYWORD_FILE = "{}/data/pattern/positive_outcome_keyword.txt".format(ROOT_DIR)
 CODE_CHANGE_TYPE_KEYWORD_FILE = "{}/data/pattern/code_change_type_keyword.txt".format(ROOT_DIR)
 UNDESIRED_BEHAVIOR_KEYWORD_FILE = "{}/data/pattern/undesired_behavior_keyword.txt".format(ROOT_DIR)
+PREDEFINED_PROGRAMMING_KEYWORD = "{}/data/pattern/predefined_programming_keyword.txt".format(ROOT_DIR)
 
 test_verb_keyword_lst = getKeywordFromFile(TEST_VERB_KEYWORD_FILE)
 annotation_noun_keyword_lst = getKeywordFromFile(ANNOTATION_NOUN_KEYWORD_FILE)
@@ -58,6 +59,9 @@ class CommitCategory(namedtuple('CommitCategory', 'name regex_exp'), Enum):
     CHARACTERISTICS_CHANGE = "characteristics_change", "({})+|({})+({})*".format(
         getKeywordFromFile(POSITIVE_OUTCOME_KEYWORD_FILE), getKeywordFromFile(CODE_CHANGE_TYPE_KEYWORD_FILE),
         getKeywordFromFile(UNDESIRED_BEHAVIOR_KEYWORD_FILE))
+
+    illustrate_function = "illustrate_function", "^((?!{}).)*$".format(
+        getKeywordFromFile(PREDEFINED_PROGRAMMING_KEYWORD).lower())
 
     def __str__(self) -> str:
         return self.name
@@ -115,7 +119,8 @@ if __name__ == "__main__":
     """
     commit_msg_test = ["fixed error feat:", "Follow the rule and conventions please",
                        "* do something.\n* do something else", "revert the change", "clearer code documentation",
-                       "fix crashes in the program", "fix crashes in the program, otherwise too fragile"]
+                       "fix crashes in the program", "fix crashes in the program, otherwise too fragile",
+                       "Make the code cleaner"]
 
     commit_classifier = CommitClassifier(commit_msg_test, False)
     commit_classifier.classify()
