@@ -25,19 +25,29 @@ def join_column(x) -> str:
     """
     Merge column and preprocess column value
     """
-    return ''.join(x.dropna().astype(str)).lstrip().rstrip().replace("/", "+").replace(";", "+").replace(" ",
-                                                                                                         "_").lower()
+    return (
+        "".join(x.dropna().astype(str))
+        .lstrip()
+        .rstrip()
+        .replace("/", "+")
+        .replace(";", "+")
+        .replace(" ", "_")
+        .lower()
+    )
 
 
-def get_finalize_dataFrame(df: DataFrame, language: str, category_start_index=4) -> DataFrame:
+def get_finalize_dataFrame(
+        df: DataFrame, language: str, category_start_index=4
+) -> DataFrame:
     """
     Prune empty/nan cell and merge two labelled categories into one, for example, why_subcategory1, why_subcategory2
     become why_subcategory where the value = why_subcategory1 == null ? why_subcategory2 : why_subcategory1
     """
-    finalized_df = df[['ID', 'link', 'repo', 'message']].copy()
+    finalized_df = df[["ID", "link", "repo", "message"]].copy()
     for category_col in CATEGORY_COLUMN:
-        finalized_df[category_col] = df[df.columns[category_start_index:category_start_index + 2]].apply(join_column,
-                                                                                       axis=1)
+        finalized_df[category_col] = df[
+            df.columns[category_start_index: category_start_index + 2]
+        ].apply(join_column, axis=1)
         category_start_index += 2
     return finalized_df
 
@@ -52,7 +62,9 @@ def appendDFToDict(col2df: dict, file: DataFrame, category: str) -> None:
         if category_name not in col2df:
             col2df[category_name] = file.loc[file[category] == category_name]
         else:
-            concate_to_res(col2df[category_name], file.loc[file[category] == category_name])
+            concate_to_res(
+                col2df[category_name], file.loc[file[category] == category_name]
+            )
 
 
 def find_sub_dataFrame(file: DataFrame) -> dict:
@@ -71,7 +83,11 @@ def concate_to_res(col_dict: DataFrame, file: DataFrame) -> DataFrame:
 
 if __name__ == "__main__":
     # get file name for labelled file
-    file_list: list = [LABELLED_PATH + f for f in listdir(LABELLED_PATH) if isfile(join(LABELLED_PATH, f))]
+    file_list: list = [
+        LABELLED_PATH + f
+        for f in listdir(LABELLED_PATH)
+        if isfile(join(LABELLED_PATH, f))
+    ]
     language_list: list = [os.path.split(i)[1].split(".")[0] for i in file_list]
 
     raw_dfs: list = [pd.read_csv(file) for file in file_list]
@@ -80,10 +96,16 @@ if __name__ == "__main__":
         print(df.why_category1.unique())
         print(df.why_category2.unique())
 
-    finalized_dfs: list = [get_finalize_dataFrame(file, language) for file, language in zip(raw_dfs, language_list)]
+    finalized_dfs: list = [
+        get_finalize_dataFrame(file, language)
+        for file, language in zip(raw_dfs, language_list)
+    ]
 
     for df, language in zip(finalized_dfs, language_list):
-        df.to_csv(os.path.join(FINALIZED_PATH, "finalized_{}.csv".format(language)), index=False)
+        df.to_csv(
+            os.path.join(FINALIZED_PATH, "finalized_{}.csv".format(language)),
+            index=False,
+        )
 
     # each key-value pair represent category value to the dataframe that contains the rows with that category
     category_to_row: dict = {}
@@ -97,4 +119,6 @@ if __name__ == "__main__":
                 category_to_row[col] = concate_to_res(category_to_row[col], sub_df)
 
     for col, sheet_df in category_to_row.items():
-        sheet_df.to_csv(os.path.join(CATEGORY_PATH, "{}_commit.csv".format(col)), index=False)
+        sheet_df.to_csv(
+            os.path.join(CATEGORY_PATH, "{}_commit.csv".format(col)), index=False
+        )
