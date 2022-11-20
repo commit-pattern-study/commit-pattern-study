@@ -1,0 +1,34 @@
+﻿code,category
+1,Describe Issue
+2,Illustrate Requirement
+3,Describe Objective
+4,Imply Necessity
+5,Trivial Why
+6,Missing Why
+7,Describe error scenario
+8,Introduce issue/PR reference
+9,Describe shortcoming
+10,Usage need
+11,Out of date
+12,Runtime or development environment change
+13,To fix defects
+14,To make improvements
+15,Conventions and standards
+16,Relation to prior commits
+17,Relation to an implemented feature
+18,Improvements and benefits
+19,Test cases
+20,Typographic fixes
+21,Text file changes
+22,Annotation changes
+23,Code refactoring
+24,Version management
+25,Summarize Code Object Change
+26,Describe Implementation Principle
+27,Illustrate Function
+28,Trivial What
+29,Missing What
+30,Characteristics of changes
+31,Object of change
+32,Change list
+33,Contrast before and after
