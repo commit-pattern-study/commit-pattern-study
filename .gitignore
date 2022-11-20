@@ -1,7 +1,7 @@
 data/category
 data/finalized
 data/sorted
-data/intercoder
+data/intercoder/*.xlsx
 
 .idea
 
