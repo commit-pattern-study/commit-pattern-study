@@ -1,221 +1,174 @@
-ID,link,repo,message,why_category1,why_category2,why_subcategory1,why_subcategory2,what_category1,what_category2,what_subcategory1,what_subcategory2
-1119,https://github.com/google/ExoPlayer/commit/5ce40fa04b69c2bdd56f8cf8c15954315297710a,google/ExoPlayer,Fix CacheDataSource trying to read more after EOS,﻿Describe Objective,,﻿To fix defects,,Illustrate Function,,,
-5116,https://github.com/material-components/material-components-android/commit/5f631d48f059ad5d15fedf7bdc26fa06d4dd45cc,material-components/material-components-android,Fix logic for when to draw Slider ' s compat halo,﻿Describe Objective,,﻿To fix defects,,Illustrate Function,,,
-9206,https://github.com/spring-projects/spring-framework/commit/f3d00da08046ca0f2789ed8c1b69ca09d0a1b09a,spring-projects/spring-framework,Use Geronimo j2ee - connector API in JMS pom,Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-13639,https://github.com/apache/kafka/commit/2c1096cb0edb73c052c3517da82deaf3725d13b6,apache/kafka,KAFKA - 10018 : Change command line tools from / bin / sh to / bin / bash ( ),Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-15559,https://github.com/ReactiveX/RxJava/commit/67d8ac7ad74dac96f75ef1a5ab7f7aaf983540b3,ReactiveX/RxJava,Merge pull request from benjchristensen / switchOnNext,Trivial Why,,﻿Version management,,Trivial What,,,
-16578,https://github.com/SeleniumHQ/selenium/commit/d5d7affdd34efba2fb5bc3a24213ac4214cd7d67,SeleniumHQ/selenium,SimonStewart : Catching a nasty issue where the interrupt status was not being cleared by the selenium emulation .,﻿Describe Issue,,﻿Describe error scenario,,Missing What,,,
-19732,https://github.com/jenkinsci/jenkins/commit/576f5b5c0d0d4932dff874ce5ec766e14c28f0c6,jenkinsci/jenkins,Merge pull request from daniel - beck / JENKINS - 40344,Trivial Why,,﻿Version management,,Trivial What,,,
-20821,https://github.com/iluwatar/java-design-patterns/commit/8c13dd0e10dcbcc609a8fd74c33043994b9ed940,iluwatar/java-design-patterns,Completed Double Dispatch example .,,Trivial Why,,Text file changes,﻿Summarize Code Object Change,,﻿Object of change,
-24082,https://github.com/alibaba/druid/commit/450f6bdd4b6fab2dcc42009d9c0397cca99accbc,alibaba/druid,refactor & bug fixed .,Trivial Why,,﻿Code refactoring,,,Missing What,,
-26201,https://github.com/SeleniumHQ/selenium/commit/886fbdede0d5187c6bcfb863bf36eccb865cb7fb,SeleniumHQ/selenium,SimonStewart : More IDEA config tweaking .,Missing Why,,,,Illustrate Function,,,
-29346,https://github.com/google/guava/commit/db73f380913db5e09bfc148e7fc31247985c6d85,google/guava,Add @ CheckReturnValue to ComparisonChain .,Trivial Why,,﻿Annotation changes,,﻿Summarize Code Object Change,,﻿Object of change,
-33354,https://github.com/apache/flink/commit/2a7dbda79a00863a511fcf64b339770d1d00f805,apache/flink,[ FLINK - 5254 ] [ yarn ] Implement YARN High - Availability Services,,Missing Why,,,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-34808,https://github.com/oracle/graal/commit/ea3baef229242ba4c2b8210a84e342763a455802,oracle/graal,Removed unused HotSpot - specific UnsafeLoadSnippets .,Trivial Why,,Code refactoring,,﻿Summarize Code Object Change,,﻿Object of change,
-36781,https://github.com/netty/netty/commit/8635d88d4de056b82f86af901ff6cc95b37e422b,netty/netty,Allow to generate a jmh uber jar to run benchmarks easily from cmdline with different arguments . ( ),﻿Describe Objective,,﻿To make improvements,,,Summarize code object change,,Characteristics of changes
-42184,https://github.com/elastic/elasticsearch/commit/d0eed79175023c208d1dfed5d9b18c3245baaa86,elastic/elasticsearch,add log message on hte concurrent streams used,Missing Why,,,,﻿Summarize Code Object Change,,Object of change,
-44274,https://github.com/oracle/graal/commit/0e21ec918b9ccef7157d788dda9e08cc2a59b029,oracle/graal,Apply proper formatting,,Trivial Why,,Code refactoring,Missing What,,,
-44681,https://github.com/signalapp/Signal-Android/commit/04eafd5fab529f336d75e4740918bda3763baa95,signalapp/Signal-Android,Allow to resend a failed message,Missing Why,,,,﻿﻿llustrate Function,,,
-44751,https://github.com/apache/shardingsphere/commit/eaa43ec24be42bd73b320ec3879211c6f11b3c76,apache/shardingsphere,add docker compose manual for example .,Trivial Why,,﻿Text file changes,,﻿Summarize Code Object Change,,﻿Object of change,
-56083,https://github.com/spring-projects/spring-boot/commit/0696695e16fe1ca41b735037d8a63df34650c174,spring-projects/spring-boot,Add package javadoc,,Trivial Why,,Annotation change,Trivial What,,,
-56494,https://github.com/elastic/elasticsearch/commit/41b974b784bec6256834655e673539200a8ca735,elastic/elasticsearch,"REST tests : Wait for yellow , not green",Missing Why,,Missing Why,,﻿Summarize Code Object Change,,Object of change,
-66364,https://github.com/oracle/graal/commit/e46cc44bcc2cacd53cb76e2e0a19f71426873f89,oracle/graal,Use EconomicMap in handle implementation .,Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-67427,https://github.com/elastic/elasticsearch/commit/6a16a60c7e2a4d0eb9aba6b6d5d72d43dab1d7fc,elastic/elasticsearch,Remove unused assignedReplicasIncludingRelocating from ShardsIterator interface ( ),,Trivial Why,,Code refactoring,﻿Summarize Code Object Change,,﻿Object of change,
-75606,https://github.com/bazelbuild/bazel/commit/70b2a5be94e91647fe6d3da589dfcf3061722005,bazelbuild/bazel,Rename swift_binary to swift_library as the intended rule is not executable .,﻿Describe Objective,,﻿To fix defects,,﻿Summarize Code Object Change,,﻿Object of change,
-78693,https://github.com/elastic/elasticsearch/commit/51b33f1fd549b474e901e70a460440d73a1751ce,elastic/elasticsearch,"S3 Repository: Deprecate remaining repositories.s3.* settings (#24144)
-Most of these settings should always be pulled from the repository
-settings. A couple were leftover that should be moved to client
-settings. The path style access setting should be removed altogether.
-This commit adds deprecations for all of these existing settings, as
-well as adding new client specific settings for max retries and
-throttling.
-
-relates #24143",Describe Issue,Introduce issue/PR reference,,,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-85243,https://github.com/dbeaver/dbeaver/commit/db61ff32c400f7aa451b2781895edc68c6cfb7a9,dbeaver/dbeaver,PG : array values decode fix,Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-93973,https://github.com/eugenp/tutorials/commit/a38487287024e1db0aac135adf9583f62e7dd311,eugenp/tutorials,Spring JSON - P with Jackson,Missing Why,,,,,Missing What,,
-94910,https://github.com/oracle/graal/commit/39b7188bf3e3cdaeabbfaaf78665423c780b71f9,oracle/graal,"FIX : , add support for function pointer varargs",Imply Necessity,,Relation to implemented feature,,Illustrate Function,,,
-97616,https://github.com/zxing/zxing/commit/4bd0064326dad971bf46dfd80fd6162f99f10670,zxing/zxing,Fixes to Spanish translation,Trivial Why,,Text file changes,,Illustrate Function,,,
-102387,https://github.com/redisson/redisson/commit/5b1728161b24f067a4a8c50022032776b39d5a87,redisson/redisson,[ maven - release - plugin ] prepare release redisson - 3 . 7 . 4,Trivial Why,,﻿Version management,,Trivial What,,,
-104055,https://github.com/eugenp/tutorials/commit/0d186f81e02a0024a6befd38ea14e0facf17f03a,eugenp/tutorials,BAEL - 4405 move probability examples to java - numbers - 4,Missing Why,,Missing Why,,Summarize code object change,,﻿Object of change,
-112257,https://github.com/spring-projects/spring-boot/commit/44c122307e968c2aabc4a89d410c804c632246b1,spring-projects/spring-boot,Tweak port usage to try and fix Windows CI build,﻿Describe Objective,,﻿To fix defects,,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-118988,https://github.com/elastic/elasticsearch/commit/9e41feda86b4190fcda978ffd905e2614c95d588,elastic/elasticsearch,Expose ` preserve_original ` in ` edge_ngram ` token filter ( ),Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-119380,https://github.com/elastic/elasticsearch/commit/fdd917a43c3a4c83ae5213f54bdcddc0b82ff3bb,elastic/elasticsearch,Unmute IndexFollowingIT # testFollowIndex,Missing Why,,,,Summarize Code Object Change,,﻿Object of change,
-124136,https://github.com/mybatis/mybatis-3/commit/1e648467a5d7dd2acb678208b38b21a9cd6d420b,mybatis/mybatis-3,Upgrade to Mockito 2 . 1 . 0,,Illustrate Requirement,,Runtime or development environment change,﻿Summarize Code Object Change,,﻿Object of change,
-124549,https://github.com/apache/shardingsphere/commit/773194371b3d9d3765f2a42917ba27973c70d70d,apache/shardingsphere,Add postgresql sample for sharding - jdbc - example - mybatis .,Imply Necessity,,Relation to implemented feature,,﻿Summarize Code Object Change,,﻿Object of change,
-129954,https://github.com/apache/shardingsphere/commit/2ee8150b51d011960bb46ec18edcf429749eb6a2,apache/shardingsphere,postgresql current user,Missing Why,,,,Missing What,,,
-133052,https://github.com/ReactiveX/RxJava/commit/97ab170928f91847de51d8094a0bcf363de82b22,ReactiveX/RxJava,Fix ambiguous imports,﻿Describe Objective,,﻿To fix defects,,Trivial What,,,
-141467,https://github.com/oracle/graal/commit/8d5f9a0d803632742bb56b3bbb8f20ab8fc32a51,oracle/graal,[ GR - 12059 ] Encapsulate platform specific implementations .,﻿Describe Objective,,﻿To make improvements,,Illustrate Function,,,
-147744,https://github.com/apache/flink/commit/ab9bd87e521d19db7c7d783268a3532d2e876a5d,apache/flink,[ FLINK - 9818 ] Add cluster component command line parser,Missing Why,,,,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-148291,https://github.com/kdn251/interviews/commit/992464d4ee2719ad563c21a432cff683f7e2846d,kdn251/interviews,Refactor SimplyEmirp :,Trivial Why,,﻿Code refactoring,,﻿Summarize Code Object Change,,﻿Object of change,
-149258,https://github.com/elastic/elasticsearch/commit/85606e8a4b60f86e9fe0e95bb8e7c426c5013358,elastic/elasticsearch,renamed all time intervals arguments and members to include the time unit in their name,Trivial Why,,Code refactoring,,﻿Summarize Code Object Change,,﻿Object of change,
-149650,https://github.com/apache/kafka/commit/f6f65a78684e41bcd6115438a76cd6c552afc043,apache/kafka,KAFKA - 6302 : Improve AdmintClient JavaDocs,,Trivial Why,,Annotation change,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-152964,https://github.com/jenkinsci/jenkins/commit/f7389c5b6d587e36e63daa21580edb464a576a6b,jenkinsci/jenkins,report the version number as well,Missing Why,,,,Missing What,,,
-155913,https://github.com/ReactiveX/RxJava/commit/500909d3a605ec69a5883b5952fe1b6e4981cfb0,ReactiveX/RxJava,Combine RefCountTest and RefCountTests,,Trivial Why,,Test cases,﻿Summarize Code Object Change,,﻿Object of change,
-157067,https://github.com/jenkinsci/jenkins/commit/3208c59ea2b04ad97dd1e144367c0d137da81824,jenkinsci/jenkins,added help text .,﻿Trivial Why,,﻿Text file changes,,Trivial What,,,
-162029,https://github.com/facebook/fresco/commit/3e1fde1e320cb44c39e6a4ac227109cc95f7f7bb,facebook/fresco,Added FrescoFrameCache that uses AnimatedFrameCache for caching,﻿Describe Objective,,﻿To make improvements,,Illustrate Function,,,
-181670,https://github.com/netty/netty/commit/c600c8f9f163164c61dba82e0c1f392b26daf75c,netty/netty,"* Reverted back the optimization applied between 3.1.4 and 3.1.3
-* Removed unnecessary break statement in NioWorker.writeNow()",Trivial Why,,Version Management; Code refactoring,,Summarize code object change,,Contrast before and after,
-182263,https://github.com/redisson/redisson/commit/8ca291b0af8b7fa91eff4181776e7f5ee6305fdd,redisson/redisson,Merge pull request from fawitte / master,Trivial Why,,﻿Version management,,Trivial What,,,
-183231,https://github.com/apache/flink/commit/e2bb32c2d1d4ea1ae2400818b57fef620076b424,apache/flink,[ hotfix ] [ k8s ] Introduce AbstractKubernetesWatcher with common logics,Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-184340,https://github.com/apache/shardingsphere/commit/84e06ff9959a67065b8936ae44e93f884ab4523d,apache/shardingsphere,", for comment : refine SQL execution event mechanism",﻿Describe Objective,,﻿To make improvements,,Illustrate Function,,,
-188630,https://github.com/NationalSecurityAgency/ghidra/commit/68de43307ed96935cd9c9303f04d39f4c69393d5,NationalSecurityAgency/ghidra,GT - 3436 - Fixed symbol tree navigation - review fixes,Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-191095,https://github.com/libgdx/libgdx/commit/acc75551bb1ff5c2242d24660aa9a91abf854a70,libgdx/libgdx,Merge pull request from andrejp88 / patch - 1,Trivial Why,,﻿Version management,,Trivial What,,,
-198490,https://github.com/eugenp/tutorials/commit/0a343e10cb3d902795ec066ef28517ba91465994,eugenp/tutorials,Merge pull request from felipeazv / master,Trivial Why,,﻿Version management,,Trivial What,,,
-205345,https://github.com/dbeaver/dbeaver/commit/31743e5e2ea506a973d1af6248657204db5e9777,dbeaver/dbeaver,Taregt pref page fix ( settings reset ),Missing Why,,Missing Why,,﻿Summarize Code Object Change,,Characteristics of changes,
-208195,https://github.com/bazelbuild/bazel/commit/83c78b1a8c772b13822386c555c6472d2912f320,bazelbuild/bazel,"Make Windows command line quoting work.
-Fixes #1445.
-
---
-MOS_MIGRATED_REVID=125773835","Describe Issue
-
-",,Introduce issue/PR reference,,﻿Summarize Code Object Change,,﻿Object of change,
-209376,https://github.com/SeleniumHQ/selenium/commit/1707d6211c6605929fc9d32501de315081985029,SeleniumHQ/selenium,SRC - 511 applied,Missing Why,,,,Missing What,,Missing What,
-211453,https://github.com/eclipse-vertx/vert.x/commit/79d8cbcd53a800644c032df68a034357df9a23bf,eclipse-vertx/vert.x,Remove dead code and add comment on daemons,Trivial Why,,﻿Code refactoring,,﻿Summarize Code Object Change,,﻿Object of change,
-211627,https://github.com/google/guava/commit/50a7e39a635b6e60332810eb286c4967c3849a4a,google/guava,"Automated g4 rollback of changelist 42665747.
-*** Reason for rollback ***
-
-All the broke tests have been fixed... i think.
-
-*** Original change description ***
-
-Automated g4 rollback of changelist 42655638.
-
-*** Reason for rollback ***
-
-Broke tests relying on previous empty service manager behavior.
-
-*** Original change description ***
-
-Provide a potentially more reasonable behavior for an empty ServiceManager. This is a situation that typically only arises in testing situations (but could theoretically happen w
-
-... description truncated by g4 rollback ...
--------------
-Created by MOE: http://code.google.com/p/moe-java
-MOE_MIGRATED_REVID=43389638
-",﻿Describe Objective,,﻿To make improvements,,"Summarize Code Object Change
-
-
-",,Change list,
-218262,https://github.com/elastic/elasticsearch/commit/55d5da485f84374a1426e6f0c1a7643ab4c85f00,elastic/elasticsearch,Merge pull request from rjernst / tame_the_beast,Trivial Why,,﻿Version management,,Trivial What,,,
-224691,https://github.com/spring-projects/spring-boot/commit/b0d388830f71445efa3317fd465fe4136cfffe82,spring-projects/spring-boot,Polish test,Trivial Why,,Code refactoring,,Trivial What,,,
-231426,https://github.com/SeleniumHQ/selenium/commit/ca9da6e8e6c42b47128e17e0cd51d39c32d3c29e,SeleniumHQ/selenium,[ java ] Deleting unused private fields,Trivial Why,,Code refactoring,,﻿Summarize Code Object Change,,﻿Object of change,
-236590,https://github.com/jenkinsci/jenkins/commit/47913a71b113d446296167ab38b05027cc3aba35,jenkinsci/jenkins,Conciser reworded SetupWizard Continue as admin button,,Trivial Why,,Text file changes,﻿Summarize Code Object Change,,Characteristics of changes,
-236677,https://github.com/dbeaver/dbeaver/commit/b3b72f53c56d0e070db0c1fc830b974f67923ff4,dbeaver/dbeaver,NuoDB - > Maven,Missing Why,,,,﻿Summarize Code Object Change,,﻿Contrast before and after,
-238321,https://github.com/PhilJay/MPAndroidChart/commit/d91e47ea71eeab6ee6f9dfd012b87f169ca44bdd,PhilJay/MPAndroidChart,"Fixed bug in CandleStickChart , worked on combined charts .",﻿Describe Objective,,﻿To fix defects,,﻿Summarize Code Object Change,,﻿Object of change,
-247056,https://github.com/libgdx/libgdx/commit/9564b50deabf422682efab3213cdfaabb682cb49,libgdx/libgdx,actually deprecate stuff,,Illustrate Requirement,,Out of date,Missing What,,,
-248881,https://github.com/SeleniumHQ/selenium/commit/013bbdc668fd7d01f508ca0be4282a365fc2e39f,SeleniumHQ/selenium,DanielWagnerHall : Making C # UnitTests fit in better with the C # project structure,﻿Describe Objective,,﻿To make improvements,,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-250334,https://github.com/apache/shardingsphere/commit/dec9a97774fb8905b39da5d01b8f85bfa0282065,apache/shardingsphere,delete invalid parameter,,Describe Objective,,To fix defects,Trivial What,,Trivial What,
-250928,https://github.com/SeleniumHQ/selenium/commit/fc7b049f4fd46e87e07f37e833470df57a793d57,SeleniumHQ/selenium,JasonLeyba : Gracefully handle exceptions raised while testing if a string,﻿Describe Objective,,﻿To make improvements,,,Summarize code object change,,Characteristics of changes
-252745,https://github.com/apache/flink/commit/c38c68e1bc0d6abf79c0d4f9ceea5bb2a8b8a1d0,apache/flink,Renamed ' match ' in functions to ' join ' .,Trivial Why,,﻿Code refactoring,,﻿Summarize Code Object Change,,﻿Object of change,
-255662,https://github.com/dbeaver/dbeaver/commit/155bf0c47761cdc43944d11e20e9800d4ea8fb4d,dbeaver/dbeaver,Merge remote - tracking branch ' origin / devel ' into devel,Trivial Why,,﻿Version management,,Trivial What,,,
-256327,https://github.com/apache/shardingsphere/commit/3284483e077bff21a1796e8c4c96a0803b43f058,apache/shardingsphere,delete blank line,,Trivial Why,,Code refactoring,Trivial What,,,
-258333,https://github.com/signalapp/Signal-Android/commit/75782affd1a1996b408731babe41f53d0f4cdae8,signalapp/Signal-Android,"Adjust joined signal string
-// FREEBIE",Missing Why,,,,Illustrate Function,,,
-259339,https://github.com/apache/flink/commit/4e00ad5944526b128cbeebb1aac2764b7905d77e,apache/flink,Removes Google collections from the build dependencies,Missing Why,,Missing Why,,,Summarize code object change,,Object of change
-261222,https://github.com/libgdx/libgdx/commit/c06bde3336b3b5536fc08c2f687fbf90223174bb,libgdx/libgdx,"[ removed ] ActorLocalTransformTest , made no sense",Imply necessity,,Conventions and standards,,﻿Summarize Code Object Change,,﻿Object of change,
-268243,https://github.com/apache/shardingsphere/commit/69559b5c5099178adc331011e7e69ffe49d37531,apache/shardingsphere,for check style,Trivial Why,,Code refactoring,,Missing What,,,
-271250,https://github.com/dbeaver/dbeaver/commit/e2b8dd0ef9ceb61966af6790ffe7f665ee396d62,dbeaver/dbeaver,PostgreSQL metadata read fix ( Generic driver ),Missing Why,,Missing Why,,﻿Summarize Code Object Change,,﻿Object of change,
-271316,https://github.com/alibaba/fastjson/commit/c1a9b702c15f3adcd85daeb1c24d924ab793349e,alibaba/fastjson,Merge pull request from lh4111 / patch - 1,Trivial Why,,﻿Version management,,Trivial What,,,
-279554,https://github.com/oracle/graal/commit/efdfd046c625de77b3080d99564c927275c188cd,oracle/graal,Avoid making stubs for dead switch successors,﻿Illustrate Requirement,,﻿Usage need,,Illustrate Function,,,
-281396,https://github.com/signalapp/Signal-Android/commit/93e9de3932433c0468c576b0c3839e5398b4221c,signalapp/Signal-Android,Increase stream copy buffer size to 64K .,Missing Why,,Missing Why,,﻿Summarize Code Object Change,,﻿Object of change,
-281468,https://github.com/apache/skywalking/commit/a9489b706739d9ca994997ac071013c9e4afd0ce,apache/skywalking,"H2 storage (#1712)
-* H2 storage code skeleton.
-
-* Add batch dao for H2.
-
-* Fix wrong refactor.
-
-* Add codes of other dao. No metric dao, wait for @peng-yongsheng new PR.
-
-* Change license of distribution
-
-* Add topology query in H2.
-
-* Add more daos.
-
-* Add some daos.
-
-* Commit all H2 daos. Wait @peng-yongsheng to submit new IAggregationQueryDAO interface.
-
-* Fix some CIs
-
-* Fix wrong refactor, which causes h2 plugin failure.
-
-* Fix all codes of H2 storage. :) and CI should pass. No test.
-
-* Fix CI and typo
-
-* Fix connection closed.
-
-* Fix register bug
-
-* no message
-
-* Fixed service inventory register bug.
-
-* Fix a compile issue.
-
-* Sync change
-
-* Reset es as default storage.
-
-* Fix rat
-
-* Fix H2 compile issue.
-
-* Fix bugs for H2 storage.
-
-* Fix bug in mesh.
-
-* 1. Fix Thermodynamic query bug
-2. Fix service inventory query bug
-3. Fix missing traceid in trace query bug
-
-* Fix query bug.
-
-* Submit reverse caused by prev PR.
-
-* Fix duplicate spans.
-
-* Use H2 as default storage implementor.
-
-* Fix bug in topology query.
-
-* Fix CI
-
-* Fix rat
-
-* Fix two query in H2 storage.
-
-* Fix H2 query
-
-* Make release running in H2 mode and develop mode running is ES mode in default",﻿Describe Issue,,﻿Describe error scenario,,﻿Summarize Code Object Change,,﻿Change list,
-288506,https://github.com/apache/shardingsphere/commit/93f8b588ef2611e0028a54f53348b8a0623d822e,apache/shardingsphere,modify getSQLExecuteGroup ( ),Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-293122,https://github.com/netty/netty/commit/c93f5afa99c74e1a03cb19ccd198887f6e4003e2,netty/netty,[ ] Cleanup,Missing Why,,,,Missing What,,,
-296402,https://github.com/SeleniumHQ/selenium/commit/e96a965a4e275c36275f77d8622b39e2e0743179,SeleniumHQ/selenium,"JariBakken : Remove spec guard for file uploads in Chrome , which now works with the dev channel .",﻿Illustrate Requirement,,"﻿Runtime or development
-environment change",,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-298279,https://github.com/jenkinsci/jenkins/commit/f028d039a3c940e68e3a780863f4fff25385b5e5,jenkinsci/jenkins,Translated to portuguese - brazil,Trivial Why,,﻿Text file changes,,Illustrate Function,,,
-300033,https://github.com/elastic/elasticsearch/commit/e8ba7a7974cf60391cc94c7ecdf9bfc6e725cdcf,elastic/elasticsearch,"d ' oh , remove debug out",Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-308090,https://github.com/eugenp/tutorials/commit/26038028f1bb66749ab40f70dc856f15940d5e4d,eugenp/tutorials,Merge pull request from eelhazati / master,Trivial Why,,﻿Version management,,Trivial What,,,
-314929,https://github.com/oracle/graal/commit/3f4af0806bcdc89b093708182ed8d6db9f4d6b2e,oracle/graal,TRegex : add support for byte array string constants in LATIN - 1 / BYTES mode,Imply Necessity,,Relation to an implemented feature,,Illustrate Function,,,
-316442,https://github.com/oracle/graal/commit/a898724f3f23c55561706fd9c66311664343cd33,oracle/graal,[ GR - 26108 ] PEGraphDecoder should respect InlineControl .,,Illustrate Requirement,,Conventions and standard,Trivial What,,,
-332717,https://github.com/material-components/material-components-android/commit/1ddb5f585a60d8d898e281fdf79045af67ed8269,material-components/material-components-android,MaterialCardView update foreground drawables instead of creating new ones .,Missing Why,,,,,Summarize code object change,,Constrast before and after
-332981,https://github.com/bazelbuild/bazel/commit/af67774310ce210cdc2528fd39631ec408563408,bazelbuild/bazel,"LocationExpander: always require options to be passed in
-Also update CommandHelper to split the heuristic label expansion code path from
-the normal code path.
-
-Progress on #2475.
-
-PiperOrigin-RevId: 170675702","Describe Issue
-
-",,Introduce issue/PR reference,,Illustrate Function,,,
-336778,https://github.com/dbeaver/dbeaver/commit/01af2de399c91b2894107307459e70cab2302aef,dbeaver/dbeaver,SQL Editor : save preferences on layout change,Missing Why,,,,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-341287,https://github.com/apache/kafka/commit/0de807357be4d776747e960b5fd17ddeae9a6cad,apache/kafka,KAFKA - 3719 ; Allow underscores in hostname,Missing Why,,,,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-343146,https://github.com/spring-projects/spring-boot/commit/00b85e8c42d445ce2ac01cded3f1aa1ba0a9a9e4,spring-projects/spring-boot,"Ensure path starts with "" / "" in ErrorController",Missing Why,,,,﻿Summarize Code Object Change,,﻿Object of change,
-351366,https://github.com/netty/netty/commit/9c1a1916962354f1e69fe43107219c25a86e6cef,netty/netty,Trim optional white space in CombinedHttpHeaders values,,Trivial Why,,Code refactoring,﻿Summarize Code Object Change,,﻿Object of change,
-351844,https://github.com/spring-projects/spring-framework/commit/87375fe6f81cb70f9ee3e44c4800ef8edce655a0,spring-projects/spring-framework,ServerHttpRequest exposes SSL certificates,﻿Describe Issue,,﻿Describe error scenario,,Missing What,,,
-352996,https://github.com/ReactiveX/RxJava/commit/98e75c2044a97166ca7e96ca9ce16055c07eaab6,ReactiveX/RxJava,Fixing the generics for merge and lift,,Describe Objective,,To fix defects,﻿Summarize Code Object Change,,﻿Object of change,
-355986,https://github.com/dbeaver/dbeaver/commit/87d68aaba5d3e92918bd1666abda5ccbaa018aa8,dbeaver/dbeaver,Revert table refresh ; quote column name,Missing Why,,,,﻿Summarize Code Object Change,,﻿Characteristics of changes,
-356306,https://github.com/dbeaver/dbeaver/commit/fc1adc3ad3cb5908386ff901eaa91e81e591f7a6,dbeaver/dbeaver,UI theme change reflection was fixed ( SQL editor + results viewer ),﻿Describe Objective,,﻿To fix defects,,Illustrate Function,,,
-357293,https://github.com/spring-projects/spring-boot/commit/ea5dfdec92a25f68509001dcb89c019ef2400ec1,spring-projects/spring-boot,Switch to latest snapshots of the GE conventions plugin,,Illustrate Requirement,,Runtime or development environment change,Trivial What,,,
-359545,https://github.com/nostra13/Android-Universal-Image-Loader/commit/06d055fde6e70f297b90524eb37e5ccda5b75dd2,nostra13/Android-Universal-Image-Loader,Upgraded Robolectric And AssertJ,,Illustrate Requirement,,Runtime or development environment change,,Trivial What,,
+﻿id,message,why_1,why_2,why_sub1,why_sub2,what1,what2,what_sub1,what_sub2,,,,,,,,,,,
+281468,"H2 storage (#1712)
+ * H2 storage code skeleton.
+ 
+ * Add batch dao for H2.
+ 
+ * Fix wrong refactor.
+ 
+ * Add codes of other dao. No metric dao, wait for @peng-yongsheng new PR.
+ 
+ * Change license of distribution
+ 
+ * Add topology query in H2.
+ 
+ * Add more daos.
+ 
+ * Add some daos.
+ 
+ * Commit all H2 daos. Wait @peng-yongsheng to submit new IAggregationQueryDAO interface.
+ 
+ * Fix some CIs
+ 
+ * Fix wrong refactor, which causes h2 plugin failure.
+ 
+ * Fix all codes of H2 storage. :) and CI should pass. No test.
+ 
+ * Fix CI and typo
+ 
+ * Fix connection closed.
+ 
+ * Fix register bug
+ 
+ * no message
+ 
+ * Fixed service inventory register bug.
+ 
+ * Fix a compile issue.
+ 
+ * Sync change
+ 
+ * Reset es as default storage.
+ 
+ * Fix rat
+ 
+ * Fix H2 compile issue.
+ 
+ * Fix bugs for H2 storage.
+ 
+ * Fix bug in mesh.
+ 
+ * 1. Fix Thermodynamic query bug
+ 2. Fix service inventory query bug
+ 3. Fix missing traceid in trace query bug
+ 
+ * Fix query bug.
+ 
+ * Submit reverse caused by prev PR.
+ 
+ * Fix duplicate spans.
+ 
+ * Use H2 as default storage implementor.
+ 
+ * Fix bug in topology query.
+ 
+ * Fix CI
+ 
+ * Fix rat
+ 
+ * Fix two query in H2 storage.
+ 
+ * Fix H2 query
+ 
+ * Make release running in H2 mode and develop mode running is ES mode in default",Describe Issue,Describe Issue,Describe error scenario,Describe error scenario,Summarize Code Object Change,Summarize code object change,Change list,Change list,,,,,,,,,,,
+16578,SimonStewart : Catching a nasty issue where the interrupt status was not being cleared by the selenium emulation .,Describe Issue,Describe Objective,Describe error scenario,To fix defects,Missing What,Missing What,Missing What,Missing What,,,,,,,,,,,
+316442,[ GR - 26108 ] PEGraphDecoder should respect InlineControl .,Describe Issue,Illustrate Requirement,Describe error scenario,Conventions and standard,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+351844,ServerHttpRequest exposes SSL certificates,Describe Issue,Missing Why,Describe error scenario,Missing Why,Missing What,Missing What,Missing What,Missing What,,,,,,,,,,,
+332981,LocationExpander : always require options to be passed in,Describe Issue,Missing Why,Describe error scenario,Missing Why,Missing What,Summarize code object change,Missing What,Characteristics of changes,,,,,,,,,,,
+133052,Fix ambiguous imports,Describe Objective,Describe Objective,To fix defects,Code refactoring,Trivial What,Summarize code object change,Trivial What,Characteristics of changes,,,,,,,,,,,
+1119,Fix CacheDataSource trying to read more after EOS,Describe Objective,Describe Objective,To fix defects,To fix defects,Summarize Code Object Change,Missing What,Characteristics of changes,Missing What,,,,,,,,,,,
+5116,Fix logic for when to draw Slider ' s compat halo,Describe Objective,Describe Objective,To fix defects,To fix defects,Summarize Code Object Change,Missing What,Characteristics of changes,Missing What,,,,,,,,,,,
+356306,UI theme change reflection was fixed ( SQL editor + results viewer ),Describe Objective,Describe Objective,To fix defects,To fix defects,Summarize Code Object Change,Missing What,Characteristics of changes,Missing What,,,,,,,,,,,
+112257,Tweak port usage to try and fix Windows CI build,Describe Objective,Describe Objective,To fix defects,To fix defects,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+188630,GT - 3436 - Fixed symbol tree navigation - review fixes,Describe Objective,Describe Objective,To fix defects,To fix defects,Trivial What,Missing What,Trivial What,Missing What,,,,,,,,,,,
+238321,"Fixed bug in CandleStickChart , worked on combined charts .",Describe Objective,Describe Objective,To fix defects,To fix defects,Trivial What,Missing What,Trivial What,Missing What,,,,,,,,,,,
+208195,Make Windows command line quoting work .,Describe Objective,Describe Objective,To fix defects,To make improvements,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+352996,Fixing the generics for merge and lift,Describe Objective,Describe Objective,To make improvements,To fix defects,Trivial What,Missing What,Trivial What,Missing What,,,,,,,,,,,
+141467,[ GR - 12059 ] Encapsulate platform specific implementations .,Describe Objective,Describe Objective,To make improvements,To make improvements,Illustrate Function,Illustrate Function,Illustrate Function,Illustrate Function,,,,,,,,,,,
+36781,Allow to generate a jmh uber jar to run benchmarks easily from cmdline with different arguments . ( ),Describe Objective,Describe Objective,To make improvements,To make improvements,llustrate Function,Summarize code object change,llustrate Function,Characteristics of changes,,,,,,,,,,,
+250928,JasonLeyba : Gracefully handle exceptions raised while testing if a string,Describe Objective,Describe Objective,To make improvements,To make improvements,Summarize Code Object Change,Summarize code object change,Object of change,Characteristics of changes,,,,,,,,,,,
+184340,", for comment : refine SQL execution event mechanism",Describe Objective,Missing Why,To make improvements,Missing Why,Summarize Code Object Change,Missing What,Characteristics of changes,Missing What,,,,,,,,,,,
+33354,[ FLINK - 5254 ] [ yarn ] Implement YARN High - Availability Services,Describe Objective,Missing Why,To make improvements,Missing Why,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+94910,"FIX : , add support for function pointer varargs",Describe Objective,Missing Why,To make improvements,Missing Why,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+314929,TRegex : add support for byte array string constants in LATIN - 1 / BYTES mode,Describe Objective,Missing Why,To make improvements,Missing Why,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+162029,Added FrescoFrameCache that uses AnimatedFrameCache for caching,Describe Objective,Missing Why,To make improvements,Missing Why,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Object of change,,,,,,,,,,,
+211627,Automated g4 rollback of changelist 42665747 .,Describe Objective,Missing Why,To make improvements,Missing Why,Trivial What,Missing What,Trivial What,Missing What,,,,,,,,,,,
+75606,Rename swift_binary to swift_library as the intended rule is not executable .,Describe Objective,Trivial Why,To fix defects,Code refactoring,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+67427,Remove unused assignedReplicasIncludingRelocating from ShardsIterator interface ( ),Describe Objective,Trivial Why,To make improvements,Code refactoring,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+248881,DanielWagnerHall : Making C # UnitTests fit in better with the C # project structure,Describe Objective,Trivial Why,To make improvements,Test cases,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+149650,KAFKA - 6302 : Improve AdmintClient JavaDocs,Describe Objective,Trivial Why,To make improvements,Text file changes,Summarize Code Object Change,Trivial What,Characteristics of changes,Trivial What,,,,,,,,,,,
+357293,Switch to latest snapshots of the GE conventions plugin,Illustrate Requirement,Illustrate Requirement,Out of date,Runtime or development environment change,Summarize Code Object Change,Trivial What,Characteristics of changes,Trivial What,,,,,,,,,,,
+124136,Upgrade to Mockito 2 . 1 . 0,Illustrate Requirement,Illustrate Requirement,Out of date,Runtime or development environment change,Summarize Code Object Change,Trivial What,Object of change,Trivial What,,,,,,,,,,,
+279554,Avoid making stubs for dead switch successors,Illustrate Requirement,Illustrate Requirement,Usage need,Runtime or development environment change,Summarize Code Object Change,Trivial What,Characteristics of changes,Trivial What,,,,,,,,,,,
+296402,"JariBakken : Remove spec guard for file uploads in Chrome , which now works with the dev channel .",Illustrate Requirement,Imply Necessity,"Runtime or development
+ environment change",Improvements and benefits,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Object of change,,,,,,,,,,,
+250334,delete invalid parameter,Imply Necessity,Describe Objective,Improvements and benefits,To fix defects,Trivial What,Summarize code object change,Trivial What,Object of change,,,,,,,,,,,
+268243,for check style,Missing Why,Describe Issue,Missing Why,Introduce issue/PR reference,Missing What,Missing What,Missing What,Missing What,,,,,,,,,,,
+205345,Taregt pref page fix ( settings reset ),Missing Why,Describe Objective,Missing Why,To fix defects,Summarize Code Object Change,Missing What,Characteristics of changes,Missing What,,,,,,,,,,,
+85243,PG : array values decode fix,Missing Why,Describe Objective,Missing Why,To fix defects,Summarize Code Object Change,Missing What,Object of change,Missing What,,,,,,,,,,,
+271250,PostgreSQL metadata read fix ( Generic driver ),Missing Why,Describe Objective,Missing Why,To fix defects,Summarize Code Object Change,Missing What,Object of change,Missing What,,,,,,,,,,,
+97616,Fixes to Spanish translation,Missing Why,Describe Objective,Missing Why,To fix defects,Trivial What,Summarize code object change,Trivial What,Characteristics of changes,,,,,,,,,,,
+281396,Increase stream copy buffer size to 64K .,Missing Why,Describe Objective,Missing Why,To make improvements,Summarize Code Object Change,Summarize code object change,Object of change,Characteristics of changes,,,,,,,,,,,
+332717,MaterialCardView update foreground drawables instead of creating new ones .,Missing Why,Describe Objective,Missing Why,To make improvements,Summarize Code Object Change,Summarize code object change,Object of change,Contrast before and after,,,,,,,,,,,
+247056,actually deprecate stuff,Missing Why,Illustrate Requirement,Missing Why,Out of date,Missing What,Missing What,Missing What,Missing What,,,,,,,,,,,
+359545,Upgraded Robolectric And AssertJ,Missing Why,Illustrate Requirement,Missing Why,Runtime or development environment change,Summarize Code Object Change,Trivial What,Object of change,Trivial What,,,,,,,,,,,
+293122,[ ] Cleanup,Missing Why,Missing Why,Missing Why,Missing Why,Missing What,Missing What,Missing What,Missing What,,,,,,,,,,,
+129954,postgresql current user,Missing Why,Missing Why,Missing Why,Missing Why,Missing What,Missing What,Missing What,Missing What,,,,,,,,,,,
+300033,"d ' oh , remove debug out",Missing Why,Missing Why,Missing Why,Missing Why,Missing What,Summarize code object change,Missing What,Characteristics of changes,,,,,,,,,,,
+209376,SRC - 511 applied,Missing Why,Missing Why,Missing Why,Missing Why,Missing What,Summarize code object change,Missing What,Object of change,,,,,,,,,,,
+44681,Allow to resend a failed message,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Missing What,Characteristics of changes,Missing What,,,,,,,,,,,
+288506,modify getSQLExecuteGroup ( ),Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Missing What,Object of change,Missing What,,,,,,,,,,,
+119380,Unmute IndexFollowingIT # testFollowIndex,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Missing What,Object of change,Missing What,,,,,,,,,,,
+26201,SimonStewart : More IDEA config tweaking .,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Missing What,Object of change,Missing What,,,,,,,,,,,
+147744,[ FLINK - 9818 ] Add cluster component command line parser,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+355986,Revert table refresh ; quote column name,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+341287,KAFKA - 3719 ; Allow underscores in hostname,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize Code Object Change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+42184,add log message on hte concurrent streams used,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Object of change,,,,,,,,,,,
+236677,NuoDB - > Maven,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Contrast before and after,Object of change,,,,,,,,,,,
+183231,[ hotfix ] [ k8s ] Introduce AbstractKubernetesWatcher with common logics,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Object of change,Characteristics of changes,,,,,,,,,,,
+258333,Adjust joined signal string,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Object of change,Characteristics of changes,,,,,,,,,,,
+118988,Expose ` preserve_original ` in ` edge_ngram ` token filter ( ),Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Object of change,Characteristics of changes,,,,,,,,,,,
+9206,Use Geronimo j2ee - connector API in JMS pom,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Object of change,Characteristics of changes,,,,,,,,,,,
+343146,"Ensure path starts with "" / "" in ErrorController",Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+13639,KAFKA - 10018 : Change command line tools from / bin / sh to / bin / bash ( ),Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+66364,Use EconomicMap in handle implementation .,Missing Why,Missing Why,Missing Why,Missing Why,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+93973,Spring JSON - P with Jackson,Missing Why,Missing Why,Missing Why,Missing Why,Trivial What,Missing What,Trivial What,Missing What,,,,,,,,,,,
+152964,report the version number as well,Missing Why,Missing Why,Missing Why,Missing Why,Trivial What,Summarize code object change,Trivial What,Characteristics of changes,,,,,,,,,,,
+104055,BAEL - 4405 move probability examples to java - numbers - 4,Missing Why,Trivial Why,Missing Why,Code refactoring,Summarize code object change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+259339,Removes Google collections from the build dependencies,Missing Why,Trivial Why,Missing Why,Code refactoring,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Object of change,,,,,,,,,,,
+236590,Conciser reworded SetupWizard Continue as admin button,Missing Why,Trivial Why,Missing Why,Code refactoring,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+56494,"REST tests : Wait for yellow , not green",Missing Why,Trivial Why,Missing Why,Test cases,Summarize Code Object Change,Missing What,Characteristics of changes,Missing What,,,,,,,,,,,
+155913,Combine RefCountTest and RefCountTests,Missing Why,Trivial Why,Missing Why,Test cases,Summarize Code Object Change,Summarize code object change,Object of change,Characteristics of changes,,,,,,,,,,,
+56083,Add package javadoc,Missing Why,Trivial Why,Missing Why,Text file changes,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Object of change,,,,,,,,,,,
+336778,SQL Editor : save preferences on layout change,Missing Why,Trivial Why,Missing Why,Trivial Why,Summarize Code Object Change,,Characteristics of changes,,,,,,,,,,,,
+124549,Add postgresql sample for sharding - jdbc - example - mybatis .,Missing Why,Trivial Why,To make improvements,Text file changes,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+224691,Polish test,Text file changes,Trivial Why,Trivial Why,Test cases,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+78693,S3 Repository : Deprecate remaining ` repositories . s3 . * ` settings ( ),Trivial Why,Illustrate Requirement,Code refactoring,Out of date,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+181670,* Reverted back the optimization applied between 3 . 1 . 4 and 3 . 1 . 3,Trivial Why,Imply Necessity,Code refactoring,"""Relation to an implemented
+  feature""",Summarize Code Object Change,Summarize code object change,Characteristics of changes,Contrast before and after,,,,,,,,,,,
+29346,Add @ CheckReturnValue to ComparisonChain .,Trivial Why,Missing Why,Annotation changes,Missing Why,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+298279,Translated to portuguese - brazil,Trivial Why,Missing Why,Text file changes,Missing Why,Summarize Code Object Change,Summarize code object change,Characteristics of changes,Characteristics of changes,,,,,,,,,,,
+148291,Refactor SimplyEmirp :,Trivial Why,Trivial Why,Code refactoring,Code refactoring,Summarize Code Object Change,Missing What,Object of change,Missing What,,,,,,,,,,,
+211453,Remove dead code and add comment on daemons,Trivial Why,Trivial Why,Code refactoring,Code refactoring,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+34808,Removed unused HotSpot - specific UnsafeLoadSnippets .,Trivial Why,Trivial Why,Code refactoring,Code refactoring,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+252745,Renamed ' match ' in functions to ' join ' .,Trivial Why,Trivial Why,Code refactoring,Code refactoring,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+149258,renamed all time intervals arguments and members to include the time unit in their name,Trivial Why,Trivial Why,Code refactoring,Code refactoring,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+231426,[ java ] Deleting unused private fields,Trivial Why,Trivial Why,Code refactoring,Code refactoring,Summarize Code Object Change,Summarize Code Object Change,Object of change,Object of change,,,,,,,,,,,
+24082,refactor & bug fixed .,Trivial Why,Trivial Why,Code refactoring,Code refactoring,Trivial What,Missing What,Trivial What,Missing What,,,,,,,,,,,
+261222,"[ removed ] ActorLocalTransformTest , made no sense",Trivial Why,Trivial Why,Code refactoring,Test cases,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+351366,Trim optional white space in CombinedHttpHeaders values,Trivial Why,Trivial Why,Text file changes,Code refactoring,Summarize Code Object Change,Summarize code object change,Object of change,Object of change,,,,,,,,,,,
+44751,add docker compose manual for example .,Trivial Why,Trivial Why,Text file changes,Text file changes,Summarize Code Object Change,Summarize code object change,Object of change,Characteristics of changes,,,,,,,,,,,
+20821,Completed Double Dispatch example .,Trivial Why,Trivial Why,Text file changes,Text file changes,Summarize Code Object Change,Trivial What,Object of change,Trivial What,,,,,,,,,,,
+157067,added help text .,Trivial Why,Trivial Why,Text file changes,Text file changes,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+44274,Apply proper formatting,Trivial Why,Trivial Why,Typographic fixes,Code refactoring,Missing What,Missing What,Missing What,Missing What,,,,,,,,,,,
+256327,delete blank line,Trivial Why,Trivial Why,Typographic fixes,Code refactoring,Trivial What,Summarize code object change,Trivial What,Object of change,,,,,,,,,,,
+102387,[ maven - release - plugin ] prepare release redisson - 3 . 7 . 4,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Missing What,Trivial What,Missing What,,,,,,,,,,,
+191095,Merge pull request from andrejp88 / patch - 1,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+15559,Merge pull request from benjchristensen / switchOnNext,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+19732,Merge pull request from daniel - beck / JENKINS - 40344,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+308090,Merge pull request from eelhazati / master,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+182263,Merge pull request from fawitte / master,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+198490,Merge pull request from felipeazv / master,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+271316,Merge pull request from lh4111 / patch - 1,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+218262,Merge pull request from rjernst / tame_the_beast,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,
+255662,Merge remote - tracking branch ' origin / devel ' into devel,Trivial Why,Trivial Why,Version management,Version management,Trivial What,Trivial What,Trivial What,Trivial What,,,,,,,,,,,

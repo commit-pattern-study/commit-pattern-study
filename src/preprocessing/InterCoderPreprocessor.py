@@ -3,6 +3,7 @@ import os
 import csv
 
 from util.CommitUtil import stem_tokenize
+from preprocessing.CategoryOrganization import languages
 
 
 def get_code_dict(file_name: str) -> dict:
@@ -43,9 +44,8 @@ def code(file_name: str):
 
 if __name__ == '__main__':
     os.chdir('../../data/intercoder')
-    languages = ['python', 'js', 'cpp', 'java']
     for lan in languages:
-        csv_name = '{}.csv'.format(lan)
+        csv_name = '../labelled/{}.csv'.format(lan)
         df_cleaned = clean(csv_name)
         df_cleaned.to_excel('cleaned_{}.xlsx'.format(lan), index=False)
 
