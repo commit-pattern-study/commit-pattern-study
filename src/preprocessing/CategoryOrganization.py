@@ -1,7 +1,4 @@
 import os.path
-from os import listdir
-from os.path import isfile, join
-
 import pandas as pd
 from pandas import DataFrame
 
@@ -13,6 +10,7 @@ WHAT_CATEGORY = "what_category"
 WHY_SUBCATEGORY = "why_subcategory"
 WHAT_SUBCATEGORY = "what_subcategory"
 CATEGORY_COLUMN = [WHY_CATEGORY, WHY_SUBCATEGORY, WHAT_CATEGORY, WHAT_SUBCATEGORY]
+languages = ['python', 'js', 'cpp', 'java']
 
 # directory for all labelled csv
 DATA_PATH = "../../data"
@@ -43,7 +41,7 @@ def get_finalize_dataFrame(
     Prune empty/nan cell and merge two labelled categories into one, for example, why_subcategory1, why_subcategory2
     become why_subcategory where the value = why_subcategory1 == null ? why_subcategory2 : why_subcategory1
     """
-    finalized_df = df[["ID", "link", "repo", "message"]].copy()
+    finalized_df = df[["id", "message"]].copy()
     for category_col in CATEGORY_COLUMN:
         finalized_df[category_col] = df[
             df.columns[category_start_index: category_start_index + 2]
@@ -82,26 +80,16 @@ def concate_to_res(col_dict: DataFrame, file: DataFrame) -> DataFrame:
 
 
 if __name__ == "__main__":
-    # get file name for labelled file
-    file_list: list = [
-        LABELLED_PATH + f
-        for f in listdir(LABELLED_PATH)
-        if isfile(join(LABELLED_PATH, f))
-    ]
-    language_list: list = [os.path.split(i)[1].split(".")[0] for i in file_list]
-
-    raw_dfs: list = [pd.read_csv(file) for file in file_list]
-
-    for df in raw_dfs:
-        print(df.why_category1.unique())
-        print(df.why_category2.unique())
+    os.chdir('../../data/labelled')
+    files = ['{}.csv'.format(lan) for lan in languages]
+    raw_dfs: list = [pd.read_csv(file) for file in files]
 
     finalized_dfs: list = [
         get_finalize_dataFrame(file, language)
-        for file, language in zip(raw_dfs, language_list)
+        for file, language in zip(raw_dfs, languages)
     ]
 
-    for df, language in zip(finalized_dfs, language_list):
+    for df, language in zip(finalized_dfs, languages):
         df.to_csv(
             os.path.join(FINALIZED_PATH, "finalized_{}.csv".format(language)),
             index=False,
