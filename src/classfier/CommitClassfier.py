@@ -1,14 +1,12 @@
 from collections import namedtuple
 from enum import Enum
 import pandas as pd
-import numpy as np
 
 from project_path import ROOT_DIR
 from util.CommitUtil import *
 from util.FileUtil import getKeywordFromFile
 
 PATTERN_DIR = "{}/data/pattern/".format(ROOT_DIR)
-
 TO_FIX_DEFECTS_KEYWORD_FILE = PATTERN_DIR + "to_fix_defects_keyword.txt"
 LINK_ISSUE_VERB_KEYWORD_FILE = PATTERN_DIR + "link_issue_verb_keyword.txt"
 OUT_OF_DATE_KEYWORD_FILE = PATTERN_DIR + "out_of_date_keyword.txt"
@@ -41,38 +39,39 @@ class WhyCategory(namedtuple("CommitCategory", "name regex_exp"), Enum):
     """
 
     # why_subcategories
-    DESCRIBE_ERROR_SCENARIO = "describe_error_scenario", ".*error.*"
+    MISSING = "Missing Why", ""
+    DESCRIBE_ERROR_SCENARIO = "Describe error scenario", ".*error.*"
 
     INTRODUCE_ISSUE_PR_REFERENCE = (
-        "introduce_issue_PR_reference",
+        "Introduce issue/PR reference",
         "(?P<link_issue_verb>{})?\W.*?(issue|review)?\W.*?(?P<issue_link>\#\d+)+".format(
             getKeywordFromFile(LINK_ISSUE_VERB_KEYWORD_FILE)
         ),
     )
 
-    OUT_OF_DATE = "out_of_date", "({})+\W".format(
+    OUT_OF_DATE = "Out of date", "({})+\W".format(
         getKeywordFromFile(OUT_OF_DATE_KEYWORD_FILE)
     )
 
-    TO_FIX_DEFECTS = "to_fix_defects", "({})+".format(fix_defects_keyword_list)
+    TO_FIX_DEFECTS = "To fix defects", "({})+".format(fix_defects_keyword_list)
 
-    CONVENTIONS_AND_STANDARDS = "conventions_and_standards", "({})*({})+({})*".format(
+    CONVENTIONS_AND_STANDARDS = "Conventions and standards", "({})*({})+({})*".format(
         getKeywordFromFile(CONFORMITY_MODAL),
         getKeywordFromFile(CONVENTIONS_AND_STANDARDS_KEYWORD_FILE),
         getKeywordFromFile(CONFORMITY_MODAL),
     )
 
     TEST_CASES = (
-        "test_cases",
+        "Test cases",
         "((\S*?test)+\W.*?({})+\W)|(({})+\W.*?(\S*?test)+\W)".format(
             test_verb_keyword_lst, test_verb_keyword_lst
         ),
     )
 
-    TYPOGRAPHIC_FIXES = "typographic_fixes", "(typo|typographic|typograph)+"
+    TYPOGRAPHIC_FIXES = "Typographic fixes", "(typo|typographic|typograph)+"
 
     TEXT_FILE_CHANGES = (
-        "text_file_changes",
+        "Text file changes",
         "(({})+\W.*?({})+\W)|(({})+\W.*?({})+\W)".format(
             text_file_noun_keyword_lst,
             editing_verb_keyword_lst,
@@ -82,7 +81,7 @@ class WhyCategory(namedtuple("CommitCategory", "name regex_exp"), Enum):
     )
 
     ANNOTATION_CHANGES = (
-        "annotation_changes",
+        "Annotation changes",
         "(({})+\W.*?({})+\W)|(({})+\W.*?({})+\W)".format(
             annotation_noun_keyword_lst,
             editing_verb_keyword_lst,
@@ -102,6 +101,7 @@ class WhatCategory(namedtuple("CommitCategory", "name regex_exp"), Enum):
     """
 
     # what_subcategories
+    MISSING = "Missing What", ""
     CHANGE_LIST = (
         "change_list",
         "(^[{}].*)([{}].*)".format(ordering_symbol_lst, ordering_symbol_lst) + "{1,}",
@@ -159,13 +159,17 @@ class CommitClassifier:
     def match_category(self, category_factory, commit_msg):
         commit_categories = []
         matched_substrings = []
+        matched_pattern = None
         for pattern in category_factory:
             if re.search(pattern.regex_exp, commit_msg):
                 if self.verbose:
                     matched_substrings.append(
                         re.findall(pattern.regex_exp, commit_msg)
                     )
-                commit_categories.append(pattern.name)
+                matched_pattern = pattern
+        if matched_pattern is None:
+            matched_pattern = category_factory.MISSING
+        commit_categories.append(matched_pattern.name)
         return commit_categories, matched_substrings
 
     def classify(self):
@@ -221,5 +225,4 @@ if __name__ == "__main__":
 
     commit_classifier = CommitClassifier(commit_msg_test, False)
     commit_classifier.classify()
-    result_df = commit_classifier.get_results()
     commit_classifier.pretty_print()
