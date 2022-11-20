@@ -124,6 +124,7 @@ class CommitClassifier:
         self.commit_category_dict = {}
         self.commit_msgs = commit_msgs
         self.preprocessed_msgs = []
+
         self.verbose = verbose
 
     def preprocess(self):
