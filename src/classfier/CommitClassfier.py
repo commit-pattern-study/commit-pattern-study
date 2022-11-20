@@ -1,5 +1,7 @@
 from collections import namedtuple
 from enum import Enum
+import pandas as pd
+import numpy as np
 
 from project_path import ROOT_DIR
 from util.CommitUtil import *
@@ -32,7 +34,7 @@ text_file_noun_keyword_lst = getKeywordFromFile(TEXT_FILE_NOUN_KEYWORD_FILE)
 ordering_symbol_lst = getKeywordFromFile(ORDERING_SYMBOL_FILE)
 
 
-class CommitCategory(namedtuple("CommitCategory", "name regex_exp"), Enum):
+class WhyCategory(namedtuple("CommitCategory", "name regex_exp"), Enum):
     """
     Enum class for each category, in which name attribute (the first one) is the unique name for the category. And the
     regex_exp is the regular expression of the pattern for the category
@@ -89,6 +91,16 @@ class CommitCategory(namedtuple("CommitCategory", "name regex_exp"), Enum):
         ),
     )
 
+    def __str__(self) -> str:
+        return self.name
+
+
+class WhatCategory(namedtuple("CommitCategory", "name regex_exp"), Enum):
+    """
+    Enum class for each category, in which name attribute (the first one) is the unique name for the category. And the
+    regex_exp is the regular expression of the pattern for the category
+    """
+
     # what_subcategories
     CHANGE_LIST = (
         "change_list",
@@ -120,11 +132,11 @@ class CommitClassifier:
         """
         return list of categories for commit_msg
         """
-
-        self.commit_category_dict = {}
         self.commit_msgs = commit_msgs
         self.preprocessed_msgs = []
-
+        self.what_subcategory = []
+        self.why_subcategory = []
+        self.results = None
         self.verbose = verbose
 
     def preprocess(self):
@@ -144,34 +156,51 @@ class CommitClassifier:
                     )
                 )
 
+    def match_category(self, category_factory, commit_msg):
+        commit_categories = []
+        matched_substrings = []
+        for pattern in category_factory:
+            if re.search(pattern.regex_exp, commit_msg):
+                if self.verbose:
+                    matched_substrings.append(
+                        re.findall(pattern.regex_exp, commit_msg)
+                    )
+                commit_categories.append(pattern.name)
+        return commit_categories, matched_substrings
+
     def classify(self):
         self.preprocess()
         for commit_msg in self.preprocessed_msgs:
-            commit_categories = []
-            matched_substrings = []
-            for pattern in CommitCategory:
-                if re.search(pattern.regex_exp, commit_msg):
-                    if self.verbose:
-                        matched_substrings.append(
-                            re.findall(pattern.regex_exp, commit_msg)
-                        )
-                    commit_categories.append(pattern)
+            why_commit_categories, why_matched_substrings = self.match_category(WhyCategory, commit_msg)
+            what_commit_categories, what_matched_substrings = self.match_category(WhatCategory, commit_msg)
             if self.verbose:
                 print(
-                    "Commit Message: {}, Categories: {}\n Matched substrings: {}\n".format(
-                        commit_msg, commit_categories, matched_substrings
-                    )
+                    "Preprocessed: {}, Why Categories: {} Why Matched substrings: {}\n What Categories: {} What Matched substrings: {}\n"
+                    .format(commit_msg, why_commit_categories, why_matched_substrings, what_commit_categories,
+                            what_matched_substrings
+                            )
                 )
-            self.commit_category_dict[commit_msg] = commit_categories
+            self.why_subcategory.append(why_commit_categories)
+            self.what_subcategory.append(what_commit_categories)
+        self.save_results()
+
+    def save_results(self):
+        d = {'message': self.commit_msgs,
+             'preprocessed': self.preprocessed_msgs,
+             'why_subcategory': self.why_subcategory,
+             'what_subcategory': self.what_subcategory}
+        df = pd.DataFrame(d)
+        df['good'] = df.apply(lambda x: len(x.why_subcategory) != 0 and len(x.what_subcategory) != 0, axis=1)
+        self.results = df
+
+    def get_results(self):
+        return self.results.copy()
 
     def pretty_print(self):
-        for commit_msg, preprocessed_msg in zip(self.preprocessed_msgs, self.preprocessed_msgs):
-            categories = self.commit_category_dict[commit_msg]
-            print(
-                "Commit Message: {}, Preprocessed: {}, Categories: {}".format(
-                    commit_msg, preprocessed_msg, ", ".join([str(e) for e in categories])
-                )
-            )
+        for row in self.results.itertuples(index=True, name='Pandas'):
+            print('Message: {}, Preprocessed: {} \nGood:{}, Why Category: {}, What Category: {}'.format(
+                row.message, row.preprocessed, row.good, row.why_subcategory, row.what_subcategory
+            ))
 
 
 if __name__ == "__main__":
@@ -187,8 +216,10 @@ if __name__ == "__main__":
         "fix crashes in the program",
         "fix crashes in the program, otherwise too fragile",
         "Make the code cleaner",
+        "categoryTest add"
     ]
 
     commit_classifier = CommitClassifier(commit_msg_test, False)
     commit_classifier.classify()
+    result_df = commit_classifier.get_results()
     commit_classifier.pretty_print()
