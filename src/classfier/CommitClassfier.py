@@ -164,11 +164,11 @@ class CommitClassifier:
             self.commit_category_dict[commit_msg] = commit_categories
 
     def pretty_print(self):
-        for commit_msg in self.preprocessed_msgs:
+        for commit_msg, preprocessed_msg in zip(self.preprocessed_msgs, self.preprocessed_msgs):
             categories = self.commit_category_dict[commit_msg]
             print(
-                "Commit Message: {}, Categories: {}".format(
-                    commit_msg, ", ".join([str(e) for e in categories])
+                "Commit Message: {}, Preprocessed: {}, Categories: {}".format(
+                    commit_msg, preprocessed_msg, ", ".join([str(e) for e in categories])
                 )
             )
 
