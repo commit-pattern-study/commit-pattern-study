@@ -194,7 +194,9 @@ class CommitClassifier:
              'why_subcategory': self.why_subcategory,
              'what_subcategory': self.what_subcategory}
         df = pd.DataFrame(d)
-        df['good'] = df.apply(lambda x: len(x.why_subcategory) != 0 and len(x.what_subcategory) != 0, axis=1)
+        df['good_classified'] = df.apply(lambda x: len(x.why_subcategory) != 0 and len(x.what_subcategory) != 0
+                                                   and WhyCategory.MISSING.name not in x.why_subcategory
+                                                   and WhatCategory.MISSING.name not in x.what_subcategory, axis=1)
         self.results = df
 
     def get_results(self):
