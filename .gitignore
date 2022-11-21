@@ -2,6 +2,7 @@ data/category
 data/finalized
 data/sorted
 data/intercoder/*.xlsx
+data/eval/*.csv
 
 .idea
 
