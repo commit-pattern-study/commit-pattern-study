@@ -105,7 +105,8 @@ def get_binary_evaluation(true_labels, pred_labels):
 
 if __name__ == '__main__':
     os.chdir('../../data/eval')
-    # prepare_train_test_sets('train_set.csv', 'test_set.csv')
+    #prepare_train_test_sets('train_set.csv', 'test_set.csv')
+    #train_df, test_df = get_train_test_set('train_set.xlsx', 'to_fix_defects.xlsx')
     train_df, test_df = get_train_test_set('train_set.xlsx', 'test_set.xlsx')
     classifer_evaluation = ClassifierEvaluation(train_df, test_df)
     classifer_evaluation.classify()
