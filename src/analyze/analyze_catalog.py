@@ -1,8 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
 
-final_df = pd.read_csv(r"./data/labelled/finalized_dataset_whole.csv")
+final_df = pd.read_csv("../../data/eval/train_set.csv")
 
 def flatten_lst(df, col):
     original_col = df[col].apply(lambda s: s.split(";"))
@@ -32,4 +31,3 @@ plt.savefig(r"./src/analyze/why_subcategory_distribution.png",
             bbox_inches = 'tight',
             )
 plt.show()
-

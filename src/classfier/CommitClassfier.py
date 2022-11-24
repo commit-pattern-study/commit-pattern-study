@@ -204,8 +204,8 @@ class CommitClassifier:
 
     def pretty_print(self):
         for row in self.results.itertuples(index=True, name='Pandas'):
-            print('Message: {}, Preprocessed: {} \nGood:{}, Why Category: {}, What Category: {}'.format(
-                row.message, row.preprocessed, row.good, row.why_subcategory, row.what_subcategory
+            print('Message: {}, Preprocessed: {} \nGood:{}, Why Category: {}, What Category: {}\n'.format(
+                row.message, row.preprocessed, row.good_classified, row.why_subcategory, row.what_subcategory
             ))
 
 
@@ -216,11 +216,10 @@ if __name__ == "__main__":
     commit_msg_test = [
         "fixed error feat:",
         "Follow the rule and conventions please",
-        "* do something.\n* do something else",
+        "* Add the submit function.\n* Delete the old documentation",
         "revert the change",
         "clearer code documentation",
         "fix crashes in the program",
-        "fix crashes in the program, otherwise too fragile",
         "Make the code cleaner",
         "categoryTest add"
     ]
